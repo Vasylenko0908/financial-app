@@ -1,5 +1,14 @@
 <nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
     <!-- Primary Navigation Menu -->
+    <div class="col-md-2">
+        <div class="flex">
+            <div class="shrink-0 flex items-center">
+                <a href="{{ route('dashboard') }}">
+                    <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
+                </a>
+            </div>
+        </div>
+    </div>
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
             <div class="flex">
@@ -19,7 +28,9 @@
             </div>
 
             <!-- Settings Dropdown -->
+            
             <div class="hidden sm:flex sm:items-center sm:ml-6">
+                @if (!Auth::guest())
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button class="flex items-center text-sm font-medium text-gray-500 hover:text-gray-700 hover:border-gray-300 focus:outline-none focus:text-gray-700 focus:border-gray-300 transition duration-150 ease-in-out">
@@ -46,8 +57,16 @@
                         </form>
                     </x-slot>
                 </x-dropdown>
+                @else
+                    @if (Route::has('login'))
+                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
+                    @endif
+                    @if (Route::has('register'))
+                        <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
+                    @endif
+                @endif
             </div>
-
+            
             <!-- Hamburger -->
             <div class="-mr-2 flex items-center sm:hidden">
                 <button @click="open = ! open" class="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out">
@@ -70,6 +89,7 @@
 
         <!-- Responsive Settings Options -->
         <div class="pt-4 pb-1 border-t border-gray-200">
+        @if (!Auth::guest())
             <div class="px-4">
                 <div class="font-medium text-base text-gray-800">{{ Auth::user()->name }}</div>
                 <div class="font-medium text-sm text-gray-500">{{ Auth::user()->email }}</div>
@@ -87,6 +107,9 @@
                     </x-responsive-nav-link>
                 </form>
             </div>
+        @else
+
+        @endif
         </div>
     </div>
 </nav>
