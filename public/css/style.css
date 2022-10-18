@@ -1,0 +1,49 @@
+body{
+    color: white;
+}
+nav .fixed-top{
+    border-bottom:1px solid #1d1d1d ;
+}
+nav a{
+    color:white !important;
+    text-transform: uppercase;
+}
+.antialiased>.min-h-screen{
+    background-color:#212121;
+}
+.first_title{
+    color:red;
+    font-family: system-ui;
+}
+.company_search{
+    margin-top:222px;
+    text-align: center;
+}
+.company_search input{
+    border-radius: 4px;
+    background-color: #424242;
+    border-width: 0px;
+}
+.list-item{
+    width: 32%;
+    height: 115px;
+    background-color: #424242;
+    margin:25px 5px;
+    padding:5px;
+    padding-top:20px;
+    border-radius: 4px;
+}
+.list-item h5{
+    color: #8bcaf9;
+}
+.list-item p{
+    color: #c7c7be;
+}
+footer .footer-nav-btm{
+    height: 80px;
+    background-color: #424242;
+    text-align: center;
+}
+footer .container{
+    padding-top:20px;
+}

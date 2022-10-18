@@ -1,15 +1,27 @@
 <x-app-layout>
-    <x-slot name="header">
-        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
-        </h2>
-    </x-slot>
+    
 
     <div class="py-12">
-        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-            <div class="bg-white overflow-hidden shadow-sm sm:rounded-lg">
-                <div class="p-6 bg-white border-b border-gray-200">
-                    
+        <div class="col-md-6 mx-auto sm:px-6 lg:px-8 company_search">
+            <div class="row">
+                <div class="col-md-12">
+                    <h1 class="first_title">Times of Value</h1>
+                    <p>A fully comprehensive financial resource</p>
+                </div>
+                <div class="col-md-12">
+                    <input type="text" class="col-md-10 mx-auto form-control search-form-control ms-lg-auto" placeholder="Search a ticker or company name"  autocomplete="off" maxlength="240" aria-label="Search" aria-controls="top-search" data-controller="s-popover" data-action="focus->s-popover#show" data-s-popover-placement="bottom-start" aria-expanded="true"/>
+                </div>
+                <div class="list-item">
+                    <h5>30+years of financial data</h5>
+                    <p>comprehensive financial data</p>
+                </div>
+                <div class="list-item">
+                    <h5>30+years of financial data</h5>
+                    <p>comprehensive financial data</p>
+                </div>
+                <div class="list-item">
+                    <h5>30+years of financial data</h5>
+                    <p>comprehensive financial data</p>
                 </div>
             </div>
         </div>

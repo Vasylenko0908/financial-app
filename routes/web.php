@@ -14,30 +14,31 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('first');
+    return view('first',['title' => 'dashboard']);
 })->name('first');
 Route::middleware(['auth'])->group(function () {
     
-    Route::get('/screener', function () {
-        return view('dashboard');
-    })->name('screener');
-    Route::get('/gurutracker', function () {
-        return view('dashboard');
-    })->name('gurutracker');
-    Route::get('/articles', function () {
-        return view('dashboard');
-    })->name('articles');
-    Route::get('/about', function () {
-        return view('dashboard');
-    })->name('about');
-    Route::get('/froum', function () {
-        return view('dashboard');
-    })->name('froum');
-    Route::get('/pricing', function () {
-        return view('dashboard');
-    })->name('pricing');
+    
     
 });
+    Route::get('/screener', function () {
+        return view('first',['title' => 'screener']);
+    })->name('screener');
+    Route::get('/gurutracker', function () {
+        return view('first',['title' => 'gurutracker']);
+    })->name('gurutracker');
+    Route::get('/articles', function () {
+        return view('first',['title' => 'articles']);
+    })->name('articles');
+    Route::get('/about', function () {
+        return view('first',['title' => 'about']);
+    })->name('about');
+    Route::get('/froum', function () {
+        return view('first',['title' => 'froum']);
+    })->name('froum');
+    Route::get('/pricing', function () {
+        return view('first',['title' => 'pricing']);
+    })->name('pricing');
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth'])->name('dashboard');
