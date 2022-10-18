@@ -3,7 +3,7 @@
     <div class="col-md-2">
         <div class="flex">
             <div class="shrink-0 flex items-center">
-                <a href="{{ route('dashboard') }}">
+                <a href="{{ route('first') }}">
                     <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
                 </a>
             </div>
@@ -14,15 +14,30 @@
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
-                    <a href="{{ route('dashboard') }}">
+                    <a href="{{ route('first') }}">
                         <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
                     </a>
                 </div>
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
+                    <x-nav-link :href="route('screener')" :active="request()->routeIs('screener')">
+                        {{ __('Screener') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('gurutracker')" :active="request()->routeIs('gurutracker')">
+                        {{ __('Guru Tracker') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('articles')" :active="request()->routeIs('articles')">
+                        {{ __('Articles') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('about')" :active="request()->routeIs('about')">
+                        {{ __('About') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('froum')" :active="request()->routeIs('froum')">
+                        {{ __('Forum') }}
+                    </x-nav-link>
+                    <x-nav-link :href="route('pricing')" :active="request()->routeIs('pricing')">
+                        {{ __('Pricing') }}
                     </x-nav-link>
                 </div>
             </div>
@@ -82,7 +97,22 @@
     <!-- Responsive Navigation Menu -->
     <div :class="{'block': open, 'hidden': ! open}" class="hidden sm:hidden">
         <div class="pt-2 pb-3 space-y-1">
-            <x-responsive-nav-link :href="route('dashboard')" :active="request()->routeIs('dashboard')">
+            <x-responsive-nav-link :href="route('screener')" :active="request()->routeIs('screener')">
+                {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('gurutracker')" :active="request()->routeIs('gurutracker')">
+                {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('articles')" :active="request()->routeIs('articles')">
+                {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('about')" :active="request()->routeIs('about')">
+                {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('froum')" :active="request()->routeIs('froum')">
+                {{ __('Dashboard') }}
+            </x-responsive-nav-link>
+            <x-responsive-nav-link :href="route('pricing')" :active="request()->routeIs('pricing')">
                 {{ __('Dashboard') }}
             </x-responsive-nav-link>
         </div>
