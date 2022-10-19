@@ -2,6 +2,12 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\ScreenerController;
+use App\Http\Controllers\GuruController;
+use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\AboutController;
+use App\Http\Controllers\ForumController;
+use App\Http\Controllers\PricingController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,24 +27,14 @@ Route::get('/', function () {
 Route::middleware(['auth'])->group(function () {    
     Route::get('/home', [MainController::class, 'index']);    
 });
-    Route::get('/screener', function () {
-        return view('first',['title' => 'screener']);
-    })->name('screener');
-    Route::get('/gurutracker', function () {
-        return view('first',['title' => 'gurutracker']);
-    })->name('gurutracker');
-    Route::get('/articles', function () {
-        return view('first',['title' => 'articles']);
-    })->name('articles');
-    Route::get('/about', function () {
-        return view('first',['title' => 'about']);
-    })->name('about');
-    Route::get('/froum', function () {
-        return view('first',['title' => 'froum']);
-    })->name('froum');
-    Route::get('/pricing', function () {
-        return view('first',['title' => 'pricing']);
-    })->name('pricing');
+    Route::get('/screener', [ScreenerController::class, 'index'])->name('screener');
+    Route::get('/gurutracker', [GuruController::class, 'index'])->name('gurutracker');
+    Route::get('/articles', [ArticleController::class, 'index'])->name('articles');
+    Route::get('/about', [AboutController::class, 'index'])->name('about');
+    Route::get('/froum', [ForumController::class, 'index'])->name('froum');
+    Route::get('/pricing', [PricingController::class, 'index'])->name('pricing');
+    
+    
 // Route::get('/dashboard', function () {
 //     return view('dashboard');
 // })->middleware(['auth'])->name('dashboard');

@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class ScreenerController extends Controller
+class ArticleController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +13,8 @@ class ScreenerController extends Controller
      */
     public function index()
     {
-        return view('pages.screener');
+        //
+        return view("pages.articles");
     }
 
     /**
