@@ -6,6 +6,7 @@ nav .fixed-top{
 }
 nav a{
     color:white !important;
+    text-decoration: none !important;
     text-transform: uppercase;
 }
 .antialiased>.min-h-screen{
@@ -25,10 +26,10 @@ nav a{
     border-width: 0px;
 }
 .list-item{
-    width: 32%;
+    width: 31%;
     height: 115px;
     background-color: #424242;
-    margin:25px 5px;
+    margin:25px 10px;
     padding:5px;
     padding-top:20px;
     border-radius: 4px;

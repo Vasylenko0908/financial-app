@@ -18,7 +18,9 @@ Route::get('/', function () {
 })->name('first');
 Route::middleware(['auth'])->group(function () {
     
-    
+    Route::get('/first', function () {
+        return view('first',['title' => 'dashboard']);
+    })->name('first');
     
 });
     Route::get('/screener', function () {
