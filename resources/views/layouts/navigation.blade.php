@@ -4,7 +4,7 @@
         <div class="col-md-3 flex">
             <!-- Logo -->
             <div class="shrink-0 flex items-center">
-                <a href="{{ route('first') }}" class="logo">
+                <a href="{{ url('/') }}" class="logo">
                     <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
                 </a>
             </div>
