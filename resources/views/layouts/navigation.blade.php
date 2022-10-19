@@ -1,10 +1,10 @@
-<nav x-data="{ open: false }" class="bg-white border-b border-gray-100">
+<nav x-data="{ open: false }" class="border-b">
     <!-- Primary Navigation Menu -->    
     <div class="row px-4 sm:px-6 lg:px-8 fixed-top">
         <div class="col-md-3 flex">
             <!-- Logo -->
             <div class="shrink-0 flex items-center">
-                <a href="{{ route('first') }}">
+                <a href="{{ route('first') }}" class="logo">
                     <x-application-logo class="block h-10 w-auto fill-current text-gray-600" />
                 </a>
             </div>
@@ -32,10 +32,10 @@
                     </x-nav-link>
                 </div>
         </div>
-        <div class="col-md-3 flex justify-between h-16">
+        <div class="col-md-3">
             <!-- Settings Dropdown -->
             
-            <div class="hidden sm:flex sm:items-center sm:ml-6">
+            <div class="sign_btn">
                 @if (!Auth::guest())
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
@@ -65,10 +65,10 @@
                 </x-dropdown>
                 @else
                     @if (Route::has('login'))
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">sign in</a>
+                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 login_btn">sign in</a>
                     @endif
                     @if (Route::has('register'))
-                        <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">sign up</a>
+                        <a href="{{ route('register') }}" class="btn btn-info signup_btn text-sm text-gray-700 dark:text-gray-500">sign out</a>
                     @endif
                 @endif
             </div>

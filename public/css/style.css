@@ -25,7 +25,7 @@ nav a{
     background-color: #424242;
     border-width: 0px;
 }
-.list-item{
+.list-item1{
     width: 31%;
     height: 115px;
     background-color: #424242;
@@ -34,10 +34,13 @@ nav a{
     padding-top:20px;
     border-radius: 4px;
 }
-.list-item h5{
+.list-item1 a{
+    text-decoration: none;
+}
+.list-item1 h5{
     color: #8bcaf9;
 }
-.list-item p{
+.list-item1 p{
     color: #c7c7be;
 }
 footer .footer-nav-btm{
@@ -47,4 +50,24 @@ footer .footer-nav-btm{
 }
 footer .container{
     padding-top:20px;
+}
+.sign_btn{
+    float: right;
+    padding-top:12px;
+}
+.sign_btn a{
+    margin-right:10px;
+}
+.logo{
+    margin:10px;
+}
+.login_btn{
+    color:#8bcaf9 !important;
+}
+.signup_btn{
+    color:#1d1d1d !important;
+    background-color: #f48fb1;
+    border: 0px;
+    font-size: 14px;
+    font-weight: 800;
 }
