@@ -87,4 +87,10 @@ footer .container{
 }
 .container{
     margin-top:74px;
+    margin-bottom:90px;
+}
+.dark-setting {
+    float:right;
+    padding-top:10px;
+    padding-right:20px;
 }
