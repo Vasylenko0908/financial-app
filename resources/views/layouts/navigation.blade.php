@@ -1,6 +1,6 @@
 <nav x-data="{ open: false }" class="border-b">
     <!-- Primary Navigation Menu -->    
-    <div class="row px-4 sm:px-6 lg:px-8 fixed-top">
+    <div class="row px-4 sm:px-6 lg:px-8 fixed-top h-menu">
         <div class="col-md-3 flex">
             <!-- Logo -->
             <div class="shrink-0 flex items-center">
