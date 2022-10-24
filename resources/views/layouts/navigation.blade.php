@@ -35,7 +35,7 @@
         <div class="col-md-3">
             <!-- Settings Dropdown -->
             
-            <div class="sign_btn">
+            <div class="sign_btn mt-2 mb-2">
                 @if (!Auth::guest())
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
@@ -78,7 +78,7 @@
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
                         <circle cx="12" cy="12" r="4"></circle>
                         <path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7"></path>
-                        </svg>
+                    </svg>
                 </button>
                 <button id="header__moon" title="Switch to light mode" class="hidden relative w-10 h-10 focus:outline-none focus:shadow-outline text-gray-500">
                     <svg style="width:24px;height:24px" viewBox="0 0 24 24">

@@ -27,7 +27,7 @@
         
     </head>
     <body class="font-sans antialiased">
-        <div class="min-h-screen bg-gray-100 ">
+        <div class="main-screen bg-gray-100 ">
             @include('layouts.navigation')
 
             <!-- Page Heading -->
@@ -50,7 +50,20 @@
 		<!--begin::Global Javascript Bundle(used by all pages)-->
 		<script src="{{ asset('assets/plugins/global/plugins.bundle.js') }}"></script>
 		<script src="{{ asset('assets/js/scripts.bundle.js') }}"></script>
-        
+        <script>
+        $( document ).ready(function() {
+            $('#header__sun').click(function(){
+                
+                $("#header__sun").addClass("hidden");        
+                $("#header__moon").removeClass("hidden");
+            });
+            $('#header__moon').click(function(){
+                $("#header__sun").removeClass("hidden");        
+                $("#header__moon").addClass("hidden");
+            });
+            
+        });
+        </script>
 		<!--end::Global Javascript Bundle-->
 		<!--begin::Page Vendors Javascript(used by this page)-->
 		<script src="{{ asset('assets/plugins/custom/datatables/datatables.bundle.js') }}"></script>

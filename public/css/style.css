@@ -1,5 +1,6 @@
 body{
     color: white;
+    background-color: #212121;
 }
 nav .fixed-top{
     border-bottom:1px solid #1d1d1d ;
@@ -9,7 +10,7 @@ nav a{
     text-decoration: none !important;
     text-transform: uppercase;
 }
-.antialiased>.min-h-screen{
+.antialiased>.main-screen{
     background-color:#212121;
 }
 .first_title{
@@ -17,7 +18,7 @@ nav a{
     font-family: system-ui;
 }
 .company_search{
-    margin-top:222px;
+    margin:222px auto;
     text-align: center;
 }
 .company_search form{
@@ -52,7 +53,6 @@ footer .container{
 }
 .sign_btn{
     float: right;
-    padding-top:14px;
 }
 .sign_btn a{
     margin-right:10px;
@@ -95,4 +95,19 @@ footer .container{
 }
 .h-menu{
     background-color: #212121;
+}
+input{
+    font-color:#6d6d6d;
+}
+.card{
+    background: none;
+}
+.card-body{
+    padding:0px 8px !important;
+}
+.card-header{
+    padding:0px 5px !important;
+}
+.currency_detail table{
+    color:aliceblue;
 }
