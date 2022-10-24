@@ -718,7 +718,385 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="kt_tab_pane_2" role="tabpanel">
-                            Nulla est ullamco ut irure incididunt nulla Lorem Lorem minim irure officia enim reprehenderit.
+                            <div class="w-full border rounded-lg p-1">
+                                <div class="row p-2">
+                                <div id="kt_charts_widget_1_chart" style="height: 350px"></div>
+                                <div class="table-responsive currency_detail ps-8 pe-8">
+                                            <table class="table table-hover">
+                                            <thead>
+                                            <tr class="fw-bold fs-6">
+                                                <th class="min-w-100px">Currency: USD</th>
+                                                <th>2012</th>
+                                                <th>2013</th>
+                                                <th>2014</th>
+                                                <th>2015</th>
+                                                <th>2016</th>
+                                                <th>2017</th>
+                                                <th>2018</th>
+                                                <th>2019</th>
+                                                <th>2020</th>
+                                                <th>2021</th>
+                                                <th>TTM</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr>
+                                                <td>Revenu per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Earnings per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+
+                                            </tr>
+                                            <tr>
+                                            <td>FCF per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Diviends per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+
+                                            </tr>
+                                            <tr>
+                                            <td>CAREX per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+
+                                            </tr>
+                                            <tr>
+                                            <td>Book Value per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Revenu per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Earnings per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+
+                                            </tr>
+                                            <tr>
+                                            <td>FCF per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Diviends per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+
+                                            </tr>
+                                            <tr>
+                                            <td>CAREX per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+
+                                            </tr>
+                                            <tr>
+                                            <td>Book Value per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Revenu per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Earnings per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+
+                                            </tr>
+                                            <tr>
+                                            <td>FCF per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Diviends per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+
+                                            </tr>
+                                            <tr>
+                                            <td>CAREX per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+
+                                            </tr>
+                                            <tr>
+                                            <td>Book Value per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+
+                                            </tr>
+                                            <tr>
+                                                <td>Revenu per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Earnings per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+
+                                            </tr>
+                                            <tr>
+                                            <td>FCF per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+                                            </tr>
+                                            <tr>
+                                            <td>Diviends per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+
+                                            </tr>
+                                            <tr>
+                                            <td>CAREX per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+
+                                            </tr>
+                                            <tr>
+                                            <td>Book Value per share</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>12.22</td>
+                                                <td>213.02</td>
+                                                <td>125.23</td>
+                                                <td>2103.5</td>
+                                                <td>2105.2</td>
+                                                <td>2103.5</td>
+
+                                            </tr>
+                                            </tbody>
+                                            </table>
+                                        </div>
+                                </div>
+                            </div>
                         </div>
                         <div class="tab-pane fade" id="kt_tab_pane_3" role="tabpanel">
                             Sint sit mollit irure quis est nostrud cillum consequat Lorem esse do quis dolor esse fugiat sunt do.
