@@ -250,7 +250,7 @@
                 </div>
                 <div class="w-full border rounded-lg  p-2 mt-xl-2 mb-xl-5">
                     
-                    <div class="w-full flex-col items-end ">
+                    <div class="w-full flex-col items-end p-2 ">
                         
                         <div class="w-full flex items-end pb-2">
                             <div class="text-lg font-normal text-center">Company Description </div>
@@ -302,7 +302,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="w-full flex text-light text-sm antialiased leading-normal text-justify pt-2 ">Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. It also sells various related services. In addition, the company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; AirPods Max, an over-ear wireless headphone; and wearables, home, and accessories comprising AirPods, Apple TV, Apple Watch, Beats products, HomePod, and iPod touch. Further, it provides AppleCare support services; cloud services store services; and operates various platforms, including the App Store that allow customers to discover and download applications and digital content, such as books, music, video, games, and podcasts. Additionally, the company offers various services, such as Apple Arcade, a game subscription service; Apple Music, which offers users a curated listening experience with on-demand radio stations; Apple News+, a subscription news and magazine service; Apple TV+, which offers exclusive original content; Apple Card, a co-branded credit card; and Apple Pay, a cashless payment service, as well as licenses its intellectual property. The company serves consumers, and small and mid-sized businesses; and the education, enterprise, and government markets. It distributes third-party applications for its products through the App Store. The company also sells its products through its retail and online stores, and direct sales force; and third-party cellular network carriers, wholesalers, retailers, and resellers. Apple Inc. was incorporated in 1977 and is headquartered in Cupertino, California.</div>
+                    <div class="w-full flex text-light text-base antialiased leading-normal text-justify pt-2 ">Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. It also sells various related services. In addition, the company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; AirPods Max, an over-ear wireless headphone; and wearables, home, and accessories comprising AirPods, Apple TV, Apple Watch, Beats products, HomePod, and iPod touch. Further, it provides AppleCare support services; cloud services store services; and operates various platforms, including the App Store that allow customers to discover and download applications and digital content, such as books, music, video, games, and podcasts. Additionally, the company offers various services, such as Apple Arcade, a game subscription service; Apple Music, which offers users a curated listening experience with on-demand radio stations; Apple News+, a subscription news and magazine service; Apple TV+, which offers exclusive original content; Apple Card, a co-branded credit card; and Apple Pay, a cashless payment service, as well as licenses its intellectual property. The company serves consumers, and small and mid-sized businesses; and the education, enterprise, and government markets. It distributes third-party applications for its products through the App Store. The company also sells its products through its retail and online stores, and direct sales force; and third-party cellular network carriers, wholesalers, retailers, and resellers. Apple Inc. was incorporated in 1977 and is headquartered in Cupertino, California.</div>
                 </div>
             </div>
             </div>
@@ -720,8 +720,11 @@
                         <div class="tab-pane fade" id="kt_tab_pane_2" role="tabpanel">
                             
                             <div class="w-full border rounded-lg p-1">
-                                <a class="btn btn-primary">Annual</a>
-                                <a class="btn btn-secondary">Quarterly</a>
+                                <div class="p-2">
+                                    <a class="btn btn-primary mx-auto ">Annual</a>
+                                    <a class="btn btn-primary mx-auto ">Quarterly</a>
+                                    <a class="btn btn-primary mr-3" style="float:right">download</a>
+                                </div>
                                 <div class="row p-2">
                                 <div id="kt_charts_widget_1_chart" style="height: 350px"></div>
                                 <div class="table-responsive currency_detail ps-8 pe-8">
@@ -737,7 +740,7 @@
                                         </li>
                                     </ul>
                                     <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade" id="kt_tab_pane_6" role="tabpanel">
+                                        <div class="tab-pane fade active show" id="kt_tab_pane_6" role="tabpanel">
                                             <table class="table table-hover">
                                                 <thead>
                                                 <tr class="fw-bold fs-6">
