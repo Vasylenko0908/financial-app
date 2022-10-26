@@ -5,7 +5,9 @@
 <x-app-layout>
     <div class="container col-md-12">
         <div class="row">
+            <!-- Start Left sidebar -->
             <div class="col-md-3 col-sm-12">
+                <!-- Company Name & Currency -->
                 <div class="row p-2">
                     <div class="col-md-6">
                         <h3>Apple.inc</h3>
@@ -14,6 +16,7 @@
                         <h5>CURRENCY:USD</h5>
                     </div>
                 </div>
+                <!-- Overall -->
                 <div class="w-full border rounded-lg p-2 mt-xl-1">
                     <div class="row p-2">
                         <div class="w-full flex items-end pb-2 justify-content-center">
@@ -112,8 +115,7 @@
                                     <div class="flex truncate font-medium">0.1113</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
-                                    <div class="flex truncate">Net Margin (TTM)
-                                    </div>
+                                    <div class="flex truncate">Net Margin (TTM)</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">0.0907</div>
                                 </div>
@@ -130,7 +132,7 @@
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Pretex Margin (TTM)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">0.1180 </div>
+                                    <div class="flex truncate font-medium">0.1180</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">ebitda Margin</div>
@@ -148,8 +150,7 @@
                                     <div class="flex truncate font-medium">24.8</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light ">
-                                    <div class="flex truncate" >P/B
-                                    </div>
+                                    <div class="flex truncate" >P/B</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">42.5</div>
                                 </div>
@@ -194,18 +195,15 @@
                                     <div class="flex truncate font-medium">2.7</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
-                                    <div class="flex truncate">Debt/Equity
-                                    </div>
+                                    <div class="flex truncate">Debt/Equity</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">0.8</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
-                                    <div class="flex truncate">Debt/Assets
-                                    </div>
+                                    <div class="flex truncate">Debt/Assets</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">0.3</div>
                                 </div>
-                                
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -248,10 +246,9 @@
                         </div>
                     </div>
                 </div>
+                <!-- Description -->
                 <div class="w-full border rounded-lg  p-2 mt-xl-2 mb-xl-5">
-                    
                     <div class="w-full flex-col items-end p-2 ">
-                        
                         <div class="w-full flex items-end pb-2">
                             <div class="text-lg font-normal text-center">Company Description </div>
                         </div>
@@ -306,10 +303,11 @@
                 </div>
             </div>
             </div>
-            
+            <!-- End Left sidebar -->
+            <!-- Start Container -->
             <div class="col-md-7 col-sm-12">
                 <div class="row p-2">
-                    <ul class="nav nav-tabs nav-line-tabs nav-line-tabs-2x mb-4 fs-6">
+                    <ul class="nav nav-tabs nav-line-tabs nav-line-tabs-2x mb-3 fs-6">
                         <li class="nav-item">
                             <a class="nav-link active" data-bs-toggle="tab" href="#kt_tab_pane_1">Summary</a>
                         </li>
@@ -1306,6 +1304,8 @@
                     </div>
                 </div>
             </div>
+            <!-- End Container -->
+            <!-- Start Right Sidebar -->
             <div class="col-md-2 col-sm-12 pt-8">
                 <!--begin::Tables widget 14-->
                 <div class="card w-full border rounded-lg p-1 mt-6">
@@ -1596,7 +1596,7 @@
                 </div>
                 <!--end::Tables widget 14-->
             </div>
+            <!-- End Right Sidebar -->
         </div>    
-    </div>            
-
+    </div>  
 </x-app-layout>
