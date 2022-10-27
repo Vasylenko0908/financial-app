@@ -106,7 +106,7 @@
                     <div class="row p-2">
                         <div class="col-md-6">
                             <div class="w-full flex items-end pb-2 justify-content-center">
-                                <div class="text-lg font-normal text-center">MARGINS </div>
+                                <div class="text-lg font-normal text-center">MARGINS</div>
                             </div>
                             <div class="space-y-1 flex flex-col items-start sticky left-0 z-10">
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
@@ -144,42 +144,42 @@
                                 <div class="text-lg font-normal mt-xl-2 text-center">VALUATION RATIOS </div>
                             </div>
                             <div class="space-y-1 flex flex-col items-start sticky left-0 z-10">
-                                <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">P/E</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">24.8</div>
                                 </div>
-                                <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light ">
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light ">
                                     <div class="flex truncate" >P/B</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">42.5</div>
                                 </div>
-                                <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">P/S</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">6.4</div>
                                 </div>
-                                <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">EV/S</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">6.5</div>
                                 </div>
-                                <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">EV/EBITDA</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">19.4 </div>
                                 </div>
-                                <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">EV/EBIT</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">21.3</div>
                                 </div>
-                                <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">EV/Pretax</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">21.4</div>
                                 </div>
-                                <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">EV/FCF</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">23.4 </div>
@@ -189,17 +189,17 @@
                                 <div class="text-lg font-normal mt-xl-2 text-center">BALANCE SHEET 10YR MEDIAN </div>
                             </div>
                             <div class="space-y-1 flex flex-col items-start sticky left-0 z-10">
-                                <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">Assetss/Equity</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">2.7</div>
                                 </div>
-                                <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">Debt/Equity</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">0.8</div>
                                 </div>
-                                <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">Debt/Assets</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">0.3</div>
@@ -242,6 +242,82 @@
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">59.58M</div>
                                 </div>
+                            </div>
+                            <div class="w-full flex items-end pb-2 justify-content-center border-b">
+                                <div class="text-lg font-normal mt-xl-2 text-center">10YE CAGR </div>
+                            </div>
+                            <div class="space-y-1 flex flex-col items-start sticky left-0 z-10">
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
+                                    <div class="flex truncate">Revennu</div>
+                                    <div class="flex flex-1 "></div>
+                                    <div class="flex truncate font-medium">12.9%</div>
+                                </div>
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
+                                    <div class="flex truncate">Assets</div>
+                                    <div class="flex flex-1 "></div>
+                                    <div class="flex truncate font-medium">11.7%</div>
+                                </div>
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
+                                    <div class="flex truncate">FCF</div>
+                                    <div class="flex flex-1 "></div>
+                                    <div class="flex truncate font-medium">10.8%</div>
+                                </div>
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
+                                    <div class="flex truncate">EPS</div>
+                                    <div class="flex flex-1 "></div>
+                                    <div class="flex truncate font-medium">19.0%</div>
+                                </div>
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
+                                    <div class="flex truncate">SHARE PRICE</div>
+                                    <div class="flex flex-1 "></div>
+                                    <div class="flex truncate font-medium">123</div>
+                                </div>
+                            </div>
+                            <div class="w-full flex items-end pb-2 justify-content-center border-b">
+                                <div class="text-lg font-normal mt-xl-2 text-center">10YR MEDIAN MARGINS</div>
+                            </div>
+                            <div class="space-y-1 flex flex-col items-start sticky left-0 z-10">
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
+                                    <div class="flex truncate">Gross Profit</div>
+                                    <div class="flex flex-1 "></div>
+                                    <div class="flex truncate font-medium">12.9</div>
+                                </div>
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
+                                    <div class="flex truncate">EBIT</div>
+                                    <div class="flex flex-1 "></div>
+                                    <div class="flex truncate font-medium">11.7</div>
+                                </div>
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
+                                    <div class="flex truncate">Pre-Tax Income</div>
+                                    <div class="flex flex-1 "></div>
+                                    <div class="flex truncate font-medium">10.5</div>
+                                </div>
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
+                                    <div class="flex truncate">FCF</div>
+                                    <div class="flex flex-1 "></div>
+                                    <div class="flex truncate font-medium">19.0</div>
+                                </div>
+                            </div>
+                            <div class="w-full flex items-end pb-2 justify-content-center border-b">
+                                <div class="text-lg font-normal mt-xl-2 text-center">10YR MEDIAN RETURNS</div>
+                            </div>
+                            <div class="space-y-1 flex flex-col items-start sticky left-0 z-10">
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
+                                    <div class="flex truncate">ROA</div>
+                                    <div class="flex flex-1 "></div>
+                                    <div class="flex truncate font-medium">17.7%</div>
+                                </div>
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
+                                    <div class="flex truncate">ROE</div>
+                                    <div class="flex flex-1 "></div>
+                                    <div class="flex truncate font-medium">44.5%</div>
+                                </div>
+                                <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
+                                    <div class="flex truncate">ROIC</div>
+                                    <div class="flex flex-1 "></div>
+                                    <div class="flex truncate font-medium">28.1%</div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -330,7 +406,84 @@
                             <div class="w-full border rounded-lg p-1">
                                 <div class="row p-2">
                                     <div class="col-md-2 pl-8 pr-1 pt-4">
-                                        <div class="space-y-1 flex flex-col items-start sticky border-r left-0 z-10"><div class="flex flex-row shrink-0 w-full px-1 text-xs font-light"><div class="flex truncate">Upcoming Earnings</div><div class="flex flex-1 "></div><div class="flex truncate font-medium">26 Oct</div></div><div class="flex flex-row shrink-0 w-full px-1 text-xs font-light"><div class="flex truncate">Shares Short<div class="text-[0.6rem] pl-0.5 text-neutral-400"> <!-- -->9/30/22</div></div><div class="flex flex-1 "></div><div class="flex truncate font-medium">103.25M</div></div><div class="flex flex-row shrink-0 w-full px-1 text-xs font-light"><div class="flex truncate">Short % of Float</div><div class="flex flex-1 "></div><div class="flex truncate font-medium">0.64%</div></div><div class="flex flex-row shrink-0 w-full px-1 text-xs font-light"><div class="flex truncate">Short % of Shares Outs.</div><div class="flex flex-1 "></div><div class="flex truncate font-medium">0.64%</div></div><div class="flex flex-row shrink-0 w-full px-1 text-xs font-light"><div class="flex truncate">% Held by Insiders</div><div class="flex flex-1 "></div><div class="flex truncate font-medium">0.07%</div></div><div class="flex flex-row shrink-0 w-full px-1 text-xs font-light"><div class="flex truncate">% Held by Institutions</div><div class="flex flex-1 "></div><div class="flex truncate font-medium">59.57%</div></div><div class="flex flex-1 border-[#f0f3fa] border-t"></div><div class="flex flex-row shrink-0 w-full px-1  text-xs font-light "><div class="flex truncate">Beta</div><div class="flex flex-1 "></div><div class="flex truncate font-medium">1.25</div></div><div class="flex flex-row shrink-0 w-full px-1 text-xs font-light"><div class="flex truncate">PEG Ratio</div><div class="flex flex-1 "></div><div class="flex truncate font-medium">2.64</div></div><div class="flex flex-row shrink-0 w-full px-1 text-xs font-light"><div class="flex truncate">52w. high/low</div><div class="flex flex-1 "></div><div class="flex truncate font-medium">182.94/129.04</div></div><div class="flex flex-row shrink-0 w-full px-1 text-xs font-light"><div class="flex truncate">Avg. Daily Volume</div><div class="flex flex-1 "></div><div class="flex truncate font-medium">81.29<!-- -->M</div></div><div class="flex flex-1 border-[#f0f3fa] border-t"></div><div class="flex flex-row shrink-0 w-full px-1 text-xs font-light"><div class="grid grid-cols-3 w-full text-right text-xs"><div class=" text-left font-medium">Return %</div><div class="font-medium">Stock</div><div class="font-medium">S&amp;P 500</div><div class="text-left">1 year</div><div class="">(3.60)</div><div class="">(19.24)</div><div class="text-left">3 years</div><div class="">139.82</div><div class="">22.14</div><div class="text-left">5 years</div><div class="">265.70</div><div class="">42.55</div></div></div><div class="flex flex-1"></div><div class="flex text-left pl-2 font-light text-xs text-neutral-400">Scale: <button class="mx-1 font-light  text-neutral-400">log</button>|<button class="mx-1 font-semibold text-neutral-400">linear</button></div></div>
+                                        <div class="space-y-1 flex flex-col items-start sticky border-r left-0 z-10">
+                                            <div class="flex flex-row shrink-0 w-full px-1 text-xs font-light">
+                                                <div class="grid grid-cols-3 w-full text-right text-xs">
+                                                    <div class=" text-left font-medium">Return %</div>
+                                                    <div class="font-medium">Stock</div>
+                                                    <div class="font-medium">S&amp;P 500</div>
+                                                    <div class="text-left">1 year</div>
+                                                    <div class="">(3.60)</div>
+                                                    <div class="">(19.24)</div>
+                                                    <div class="text-left">3 years</div>
+                                                    <div class="">139.82</div>
+                                                    <div class="">22.14</div>
+                                                    <div class="text-left">5 years</div>
+                                                    <div class="">265.70</div>
+                                                    <div class="">42.55</div>
+                                                </div>
+                                            </div>
+                                            
+                                            <div class="flex flex-1 border-[#f0f3fa] border-t"></div>
+                                            <div class="flex flex-row shrink-0 w-full px-1  text-xs font-light ">
+                                                <div class="flex truncate">Beta</div>
+                                                <div class="flex flex-1 "></div>
+                                                <div class="flex truncate font-medium">1.25</div>
+                                            </div>
+                                            <div class="flex flex-row shrink-0 w-full px-1 text-xs font-light">
+                                                <div class="flex truncate">PEG Ratio</div>
+                                                <div class="flex flex-1 "></div>
+                                                <div class="flex truncate font-medium">2.64</div>
+                                            </div>
+                                            <div class="flex flex-row shrink-0 w-full px-1 text-xs font-light">
+                                                <div class="flex truncate">52w. high/low</div>
+                                                <div class="flex flex-1 "></div>
+                                                <div class="flex truncate font-medium">182.94/129.04</div>
+                                            </div>
+                                            <div class="flex flex-row shrink-0 w-full px-1 text-xs font-light">
+                                                <div class="flex truncate">Avg. Daily Volume</div>
+                                                <div class="flex flex-1 "></div>
+                                                <div class="flex truncate font-medium">81.29<!-- -->M</div>
+                                            </div>
+                                            <div class="flex flex-1 border-[#f0f3fa] border-t"></div>
+                                            <div class="flex flex-row shrink-0 w-full px-1 text-xs font-light">
+                                                <div class="flex truncate">Upcoming Earnings</div>
+                                                <div class="flex flex-1 "></div>
+                                                <div class="flex truncate font-medium">26 Oct</div>
+                                            </div>
+                                            <div class="flex flex-row shrink-0 w-full px-1 text-xs font-light">
+                                                <div class="flex truncate">Shares Short
+                                                    <div class="text-[0.6rem] pl-0.5 text-neutral-400"> <!-- -->9/30/22</div>
+                                                </div>
+                                                <div class="flex flex-1 "></div>
+                                                <div class="flex truncate font-medium">103.25M</div>
+                                            </div>
+                                            <div class="flex flex-row shrink-0 w-full px-1 text-xs font-light">
+                                                <div class="flex truncate">Short % of Float</div>
+                                                <div class="flex flex-1 "></div>
+                                                <div class="flex truncate font-medium">0.64%</div>
+                                            </div>
+                                            <div class="flex flex-row shrink-0 w-full px-1 text-xs font-light">
+                                                <div class="flex truncate">Short % of Shares Outs.</div>
+                                                <div class="flex flex-1 "></div>
+                                                <div class="flex truncate font-medium">0.64%</div>
+                                            </div>
+                                            <div class="flex flex-row shrink-0 w-full px-1 text-xs font-light">
+                                                <div class="flex truncate">% Held by Insiders</div>
+                                                <div class="flex flex-1 "></div>
+                                                <div class="flex truncate font-medium">0.07%</div>
+                                            </div>
+                                            <div class="flex flex-row shrink-0 w-full px-1 text-xs font-light">
+                                                <div class="flex truncate">% Held by Institutions</div>
+                                                <div class="flex flex-1 "></div>
+                                                <div class="flex truncate font-medium">59.57%</div>
+                                            </div>
+                                            <div class="flex flex-1"></div>
+                                            <div class="flex text-left pl-2 font-light text-xs text-neutral-400">Scale: 
+                                                <button class="mx-1 font-light  text-neutral-400">log</button>|
+                                                <button class="mx-1 font-semibold text-neutral-400">linear</button>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="col-md-10 pl-1">
                                         <!--begin::Chart-->
@@ -1317,11 +1470,13 @@
                             <span class="fs-7 fw-bolder text-gray-700 pe-4 text-nowrap d-none d-xxl-block">Sort By:</span>
                             <!--end::Label-->
                             <!--begin::Select-->
-                            <select class="form-select form-select-sm form-select-solid w-100px w-xxl-125px" data-control="select2" data-placeholder="Latest" data-hide-search="true">
+                            <select class="form-select form-select-sm form-select-solid w-100px w-xxl-125px" data-control="select2" data-placeholder="Watchlist" data-hide-search="true">
                                 <option value=""></option>
-                                <option value="1" selected="selected">Latest</option>
-                                <option value="2">In Progress</option>
-                                <option value="3">Done</option>
+                                <option value="1">Create new list...</option>
+                                <option value="2">Import list...</option>
+                                <option value="3"><i class="fonticon-bookmark"></i>Red list...</option>
+                                <option value="4" selected="selected">Watchlist</option>
+                                <option value="5">Deleted Symbols</option>
                             </select>
                             <!--end::Select-->
                         </div>

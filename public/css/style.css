@@ -117,3 +117,9 @@ input{
 .tab-content{
     padding:0px;
 }
+form input{
+    color:rgb(20, 20, 20);
+}
+#kt_scrolltop{
+    z-index:10000;
+}
