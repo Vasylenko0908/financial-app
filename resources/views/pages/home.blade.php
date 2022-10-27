@@ -423,7 +423,6 @@
                                                     <div class="">42.55</div>
                                                 </div>
                                             </div>
-                                            
                                             <div class="flex flex-1 border-[#f0f3fa] border-t"></div>
                                             <div class="flex flex-row shrink-0 w-full px-1  text-xs font-light ">
                                                 <div class="flex truncate">Beta</div>
