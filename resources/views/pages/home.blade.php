@@ -104,7 +104,7 @@
                         </div>
                     </div>
                     <div class="row p-2">
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-12">
                             <div class="w-full flex items-end pb-2 justify-content-center">
                                 <div class="text-lg font-normal text-center">MARGINS</div>
                             </div>
@@ -206,7 +206,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 col-sm-12">
                             <div class="w-full flex items-end pb-2 justify-content-center">
                                 <div class="text-lg font-normal text-center">BALANCE SHEET </div>
                             </div>
@@ -405,7 +405,7 @@
                         <div class="tab-pane fade show active" id="kt_tab_pane_1" role="tabpanel">
                             <div class="w-full border rounded-lg p-1">
                                 <div class="row p-2">
-                                    <div class="col-md-2 pl-8 pr-1 pt-4">
+                                    <div class="col-md-2 col-sm-12 pl-8 pr-1 pt-4 " style="line-height:initial">
                                         <div class="space-y-1 flex flex-col items-start sticky border-r left-0 z-10">
                                             <div class="flex flex-row shrink-0 w-full px-1 text-xs font-light">
                                                 <div class="grid grid-cols-3 w-full text-right text-xs">
@@ -423,7 +423,7 @@
                                                     <div class="">42.55</div>
                                                 </div>
                                             </div>
-                                            <div class="flex flex-1 border-[#f0f3fa] border-t"></div>
+                                            <div class="flex flex-1  border-t"></div>
                                             <div class="flex flex-row shrink-0 w-full px-1  text-xs font-light ">
                                                 <div class="flex truncate">Beta</div>
                                                 <div class="flex flex-1 "></div>
@@ -444,7 +444,7 @@
                                                 <div class="flex flex-1 "></div>
                                                 <div class="flex truncate font-medium">81.29<!-- -->M</div>
                                             </div>
-                                            <div class="flex flex-1 border-[#f0f3fa] border-t"></div>
+                                            <div class="flex flex-1  border-t"></div>
                                             <div class="flex flex-row shrink-0 w-full px-1 text-xs font-light">
                                                 <div class="flex truncate">Upcoming Earnings</div>
                                                 <div class="flex flex-1 "></div>
@@ -484,7 +484,21 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-md-10 pl-1">
+                                    <div class="col-md-10 col-sm-12 pl-1">
+                                        <!--begin::Toolbar-->
+                                        <div class="card-toolbar" data-kt-buttons="true">
+                                            
+                                            <a class="btn btn-sm btn-color-muted btn-active btn-active-primary px-4 me-1" id="kt_charts_1D_btn">1D</a>
+                                            <a class="btn btn-sm btn-color-muted btn-active btn-active-primary px-4" id="kt_charts_5D_btn">5D</a>
+                                            <a class="btn btn-sm btn-color-muted btn-active btn-active-primary px-4" id="kt_charts_1M_btn">1M</a>
+                                            <a class="btn btn-sm btn-color-muted btn-active btn-active-primary px-4" id="kt_charts_3M_btn">3M</a>
+                                            <a class="btn btn-sm btn-color-muted btn-active btn-active-primary px-4" id="kt_charts_6M_btn">6M</a>
+                                            <a class="btn btn-sm btn-color-muted btn-active btn-active-primary px-4" id="kt_charts_ytd_btn">YTD</a>
+                                            <a class="btn btn-sm btn-color-muted btn-active btn-active-primary px-4" id="kt_charts_1Y_btn">1Y</a>
+                                            <a class="btn btn-sm btn-color-muted btn-active btn-active-primary px-4" id="kt_charts_5Y_btn">5Y</a>
+                                            <a class="btn btn-sm btn-color-muted btn-active btn-active-primary active px-4 me-1" id="kt_charts_all_btn">All</a>
+                                        </div>
+                                        <!--end::Toolbar-->
                                         <!--begin::Chart-->
                                         <div id="kt_charts_widget_20" class="min-h-auto ps-4 pe-6" data-kt-chart-info="Revenue" style="height: 300px"></div>
                                     </div>
