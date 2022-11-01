@@ -885,9 +885,14 @@
                             
                             <div class="w-full border rounded-lg p-1">
                                 <div class="p-2">
-                                    <a class="btn btn-primary mx-auto ">Annual</a>
-                                    <a class="btn btn-primary mx-auto ">Quarterly</a>
-                                    <a class="btn btn-primary mr-3" style="float:right">download</a>
+                                    <!--begin::Nav group-->
+                                    <div class="nav-group nav-group-outline" data-kt-buttons="true">
+                                        <button class="btn btn-color-gray-400 btn-active btn-active-primary px-6 py-3 me-2 active" data-kt-plan="annual">Annual</button>
+                                        <button class="btn btn-color-gray-400 btn-active btn-active-primary px-6 py-3" data-kt-plan="quarterly">Quarterly</button>
+                                        <a class="btn btn-primary" style="float:right">download</a>
+                                    </div>
+                                    <!--end::Nav group-->
+                                   
                                 </div>
                                 <div class="row p-2">
                                 <div id="kt_charts_widget_1_chart" style="height: 350px"></div>

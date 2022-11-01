@@ -19,14 +19,17 @@
 		<!--begin::Global Stylesheets Bundle(used by all pages)-->
 		<link href="{{ asset('assets/plugins/global/plugins.bundle.css') }}" rel="stylesheet" type="text/css" />
 		<link href="{{ asset('assets/css/style.bundle.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/plugins/global/plugins.dark.bundle.css') }}" rel="stylesheet" type="text/css" />
+        <link href="{{ asset('assets/css/style.dark.bundle.css') }}" rel="stylesheet" type="text/css" />
 		<!--end::Global Stylesheets Bundle-->
+        
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('bootstrap/css/bootstrap.css') }}">
         <link rel="stylesheet" href="{{ asset('css/style.css') }}">
         <!-- Scripts -->
         
     </head>
-    <body class="font-sans antialiased">
+    <body class="font-sans antialiased ">
         <div class="main-screen bg-gray-100 ">
             @include('layouts.navigation')
 
@@ -68,11 +71,22 @@
                 
                 $("#header__sun").addClass("hidden");        
                 $("#header__moon").removeClass("hidden");
+                $('body').removeClass('dark-mode');
+                KTApp.setThemeMode("light", function() {
+                    console.log("changed to light mode");
+                });
             });
             $('#header__moon').click(function(){
                 $("#header__sun").removeClass("hidden");        
                 $("#header__moon").addClass("hidden");
+                $('body').addClass('dark-mode');
+                KTApp.setThemeMode("dark", function() {
+                    console.log("changed to dark mode");
+                });
             });
+             // set dark mode
+
+           
             
         });
         </script>
