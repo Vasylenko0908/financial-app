@@ -28,7 +28,7 @@
         <!-- Scripts -->
         
     </head>
-    <body class="font-sans antialiased ">
+    <body class="font-sans antialiased " id="kt_body">
         <div class="main-screen bg-gray-100 ">
             @include('layouts.navigation')
 

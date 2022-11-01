@@ -10,43 +10,155 @@
                                 <tr>
                                     <td width="1%"></td>
                                     <td align="center" width="15%">
-                                    <select id="screenerPresetsSelect" style="width: 100%; visibility: visible;" class="body-combo-text" onchange="ScreenerPresetsChange(value,&quot;v=121&amp;ft=4&amp;o=sector&quot;)">
-                                    <option>My Presets</option>
-                                    <option value="__save_screen">-Save Screen</option>
-                                    <option value="__edit_screens">-Edit Screens</option>
-                                    </select>
+                                        <select id="screenerPresetsSelect" style="width: 100%; visibility: visible;" class="body-combo-text form-select form-select-sm form-select-solid" data-control="select2">
+                                            <option>My Presets</option>
+                                            <option value="__save_screen">-Save Screen</option>
+                                            <option value="__edit_screens">-Edit Screens</option>
+                                        </select>
                                     </td>
                                     <td align="center" width="6%">
-                                    <span class="body-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Order] body=[<table width=300><tr><td class='tooltip_tab'>Select the criteria by which the output information will be sorted. The order settings apply to all views. Use the <b>ascending</b> and <b>descending</b> option to invert the current order.<br><br> TIP: In table views you can click on top of a column to sort the table by the underlying values.</td></tr></table>] delay=[500]">Order:</span></td>
+                                        <span class="body-combo-title" style="cursor:pointer;">Order:</span>
+                                    </td>
                                     <td align="left" width="20%">
-                                    <select id="orderSelect" style="width: 100%; visibility: visible;" class="body-combo-text" onchange="window.location=document.getElementById(&quot;orderSelect&quot;).value">
-                                    <option value="screener.ashx?v=121&amp;ft=4&amp;o=ticker">Ticker</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=company">Company</option><option selected="selected" value="screener.ashx?v=121&amp;ft=4&amp;o=sector">Sector</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=industry">Industry</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=country">Country</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=marketcap">Market Cap.</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=pe">Price/Earnings</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=forwardpe">Forward Price/Earnings</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=peg">PEG (Price/Earnings/Growth)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=ps">Price/Sales</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=pb">Price/Book</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=pc">Price/Cash</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=pfcf">Price/Free Cash Flow</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=dividendyield">Dividend Yield</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=payoutratio">Payout Ratio</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=eps">EPS (ttm)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=epsyoy">EPS growth this year</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=epsyoy1">EPS growth next year</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=eps5years">EPS growth past 5 years</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=estltgrowth">EPS growth next 5 years</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=sales5years">Sales growth past 5 years</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=epsqoq">EPS growth qtr over qtr</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=salesqoq">Sales growth qtr over qtr</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=sharesoutstanding2">Shares Outstanding</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=sharesfloat">Shares Float</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=insiderown">Insider Ownership</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=insidertrans">Insider Transactions</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=instown">Institutional Ownership</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=insttrans">Institutional Transactions</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=shortinterestshare">Short Interest Share</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=shortinterestratio">Short Interest Ratio</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=earningsdate">Earnings Date</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=roa">Return on Assets</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=roe">Return on Equity</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=roi">Return on Investment</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=curratio">Current Ratio</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=quickratio">Quick Ratio</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=ltdebteq">LT Debt/Equity</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=debteq">Total Debt/Equity</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=grossmargin">Gross Margin</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=opermargin">Operating Margin</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=netmargin">Net Profit Margin</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=recom">Analyst Recommendation</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=perf1w">Performance (Week)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=perf4w">Performance (Month)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=perf13w">Performance (Quarter)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=perf26w">Performance (Half Year)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=perf52w">Performance (Year)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=perfytd">Performance (Year To Date)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=beta">Beta</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=averagetruerange">Average True Range</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=volatility1w">Volatility (Week)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=volatility4w">Volatility (Month)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=sma20">20-Day SMA (Relative)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=sma50">50-Day SMA (Relative)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=sma200">200-Day SMA (Relative)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=high50d">50-Day High (Relative)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=low50d">50-Day Low (Relative)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=high52w">52-Week High (Relative)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=low52w">52-Week Low (Relative)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=rsi">Relative Strength Index (14)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=averagevolume">Average Volume (3 Month)</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=relativevolume">Relative Volume</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=change">Change</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=changeopen">Change from Open</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=gap">Gap</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=volume">Volume</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=price">Price</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=targetprice">Target Price</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=ipodate">IPO Date</option></select>
+                                        <select id="orderSelect" style="width: 100%; visibility: visible;" class="body-combo-text form-select form-select-sm form-select-solid" data-control="select2">
+                                            <option value="ticker">Ticker</option>
+                                            <option value="company">Company</option>
+                                            <option selected="selected" value="sector">Sector</option>
+                                            <option value="industry">Industry</option>
+                                            <option value="country">Country</option>
+                                            <option value="marketcap">Market Cap</option>
+                                            <option value="pe">Price/Earnings</option>
+                                            <option value="forwardpe">Forward Price/Earnings</option>
+                                            <option value="peg">PEG (Price/Earnings/Growth)</option>
+                                            <option value="ps">Price/Sales</option>
+                                            <option value="pb">Price/Book</option>
+                                            <option value="pc">Price/Cash</option>
+                                            <option value="pfcf">Price/Free Cash Flow</option>
+                                            <option value="dividendyield">Dividend Yield</option>
+                                            <option value="payoutratio">Payout Ratio</option>
+                                            <option value="eps">EPS (ttm)</option>
+                                            <option value="epsyoy">EPS growth this year</option>
+                                            <option value="epsyoy1">EPS growth next year</option>
+                                            <option value="eps5years">EPS growth past 5 years</option>
+                                            <option value="estltgrowth">EPS growth next 5 years</option>
+                                            <option value="sales5years">Sales growth past 5 years</option>
+                                            <option value="epsqoq">EPS growth qtr over qtr</option>
+                                            <option value="salesqoq">Sales growth qtr over qtr</option>
+                                            <option value="sharesoutstanding2">Shares Outstanding</option>
+                                            <option value="sharesfloat">Shares Float</option>
+                                            <option value="insiderown">Insider Ownership</option>
+                                            <option value="insidertrans">Insider Transactions</option>
+                                            <option value="instown">Institutional Ownership</option>
+                                            <option value="insttrans">Institutional Transactions</option>
+                                            <option value="shortinterestshare">Short Interest Share</option>
+                                            <option value="shortinterestratio">Short Interest Ratio</option>
+                                            <option value="earningsdate">Earnings Date</option>
+                                            <option value="roa">Return on Assets</option>
+                                            <option value="roe">Return on Equity</option>
+                                            <option value="roi">Return on Investment</option>
+                                            <option value="curratio">Current Ratio</option>
+                                            <option value="quickratio">Quick Ratio</option>
+                                            <option value="ltdebteq">LT Debt/Equity</option>
+                                            <option value="debteq">Total Debt/Equity</option>
+                                            <option value="grossmargin">Gross Margin</option>
+                                            <option value="opermargin">Operating Margin</option>
+                                            <option value="netmargin">Net Profit Margin</option>
+                                            <option value="recom">Analyst Recommendation</option>
+                                            <option value="perf1w">Performance (Week)</option>
+                                            <option value="perf4w">Performance (Month)</option>
+                                            <option value="perf13w">Performance (Quarter)</option>
+                                            <option value="perf26w">Performance (Half Year)</option>
+                                            <option value="perf52w">Performance (Year)</option>
+                                            <option value="perfytd">Performance (Year To Date)</option>
+                                            <option value="beta">Beta</option>
+                                            <option value="averagetruerange">Average True Range</option>
+                                            <option value="volatility1w">Volatility (Week)</option>
+                                            <option value="volatility4w">Volatility (Month)</option>
+                                            <option value="sma20">20-Day SMA (Relative)</option>
+                                            <option value="sma50">50-Day SMA (Relative)</option>
+                                            <option value="sma200">200-Day SMA (Relative)</option>
+                                            <option value="high50d">50-Day High (Relative)</option>
+                                            <option value="low50d">50-Day Low (Relative)</option>
+                                            <option value="high52w">52-Week High (Relative)</option>
+                                            <option value="low52w">52-Week Low (Relative)</option>
+                                            <option value="rsi">Relative Strength Index (14)</option>
+                                            <option value="averagevolume">Average Volume (3 Month)</option>
+                                            <option value="relativevolume">Relative Volume</option>
+                                            <option value="change">Change</option>
+                                            <option value="changeopen">Change from Open</option>
+                                            <option value="gap">Gap</option>
+                                            <option value="volume">Volume</option>
+                                            <option value="price">Price</option>
+                                            <option value="targetprice">Target Price</option>
+                                            <option value="ipodate">IPO Date</option>
+                                        </select>
                                     </td>
                                     <td align="left" width="6%">
-                                    <select id="orderDirSelect" style="width: 100%; visibility: visible;" class="body-combo-text" onchange="window.location=document.getElementById(&quot;orderDirSelect&quot;).value">
-                                    <option selected="selected" value="screener.ashx?v=121&amp;ft=4&amp;o=sector">Asc</option><option value="screener.ashx?v=121&amp;ft=4&amp;o=-sector">Desc</option></select>
+                                        <select id="orderDirSelect" style="width: 100%; visibility: visible;" class="body-combo-text form-select form-select-sm form-select-solid" data-control="select2">
+                                            <option selected="selected" value="sector">Asc</option>
+                                            <option value="sector">Desc</option>
+                                        </select>
                                     </td>
                                     <td align="center" width="6%">
-                                    <span class="body-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Signal] body=[<table width=300><tr><td class='tooltip_tab'>You can screen the stocks by signal - an event, by which traders usually enter or exit positions.</td></tr></table>] delay=[500]">Signal:</span></td>
+                                        <span class="body-combo-title" style="cursor:pointer;">Signal:</span>
+                                    </td>
                                     <td align="left" width="15%">
-                                    <select id="signalSelect" style="width: 100%; visibility: visible;" class="body-combo-text" onchange="window.location=document.getElementById(&quot;signalSelect&quot;).value">
-                                    <option selected="selected" value="screener.ashx?v=121&amp;ft=4&amp;o=sector">None (all stocks)</option><option value="screener.ashx?v=121&amp;s=ta_topgainers&amp;ft=4&amp;o=sector">Top Gainers</option><option value="screener.ashx?v=121&amp;s=ta_toplosers&amp;ft=4&amp;o=sector">Top Losers</option><option value="screener.ashx?v=121&amp;s=ta_newhigh&amp;ft=4&amp;o=sector">New High</option><option value="screener.ashx?v=121&amp;s=ta_newlow&amp;ft=4&amp;o=sector">New Low</option><option value="screener.ashx?v=121&amp;s=ta_mostvolatile&amp;ft=4&amp;o=sector">Most Volatile</option><option value="screener.ashx?v=121&amp;s=ta_mostactive&amp;ft=4&amp;o=sector">Most Active</option><option value="screener.ashx?v=121&amp;s=ta_unusualvolume&amp;ft=4&amp;o=sector">Unusual Volume</option><option value="screener.ashx?v=121&amp;s=ta_overbought&amp;ft=4&amp;o=sector">Overbought</option><option value="screener.ashx?v=121&amp;s=ta_oversold&amp;ft=4&amp;o=sector">Oversold</option><option value="screener.ashx?v=121&amp;s=n_downgrades&amp;ft=4&amp;o=sector">Downgrades</option><option value="screener.ashx?v=121&amp;s=n_upgrades&amp;ft=4&amp;o=sector">Upgrades</option><option value="screener.ashx?v=121&amp;s=n_earningsbefore&amp;ft=4&amp;o=sector">Earnings Before</option><option value="screener.ashx?v=121&amp;s=n_earningsafter&amp;ft=4&amp;o=sector">Earnings After</option><option value="screener.ashx?v=121&amp;s=it_latestbuys&amp;ft=4&amp;o=sector">Recent Insider Buying</option><option value="screener.ashx?v=121&amp;s=it_latestsales&amp;ft=4&amp;o=sector">Recent Insider Selling</option><option value="screener.ashx?v=121&amp;s=n_majornews&amp;ft=4&amp;o=sector">Major News</option><option value="screener.ashx?v=121&amp;s=ta_p_horizontal&amp;ft=4&amp;o=sector">Horizontal S/R</option><option value="screener.ashx?v=121&amp;s=ta_p_tlresistance&amp;ft=4&amp;o=sector">TL Resistance</option><option value="screener.ashx?v=121&amp;s=ta_p_tlsupport&amp;ft=4&amp;o=sector">TL Support</option><option value="screener.ashx?v=121&amp;s=ta_p_wedgeup&amp;ft=4&amp;o=sector">Wedge Up</option><option value="screener.ashx?v=121&amp;s=ta_p_wedgedown&amp;ft=4&amp;o=sector">Wedge Down</option><option value="screener.ashx?v=121&amp;s=ta_p_wedgeresistance&amp;ft=4&amp;o=sector">Triangle Ascending</option><option value="screener.ashx?v=121&amp;s=ta_p_wedgesupport&amp;ft=4&amp;o=sector">Triangle Descending</option><option value="screener.ashx?v=121&amp;s=ta_p_wedge&amp;ft=4&amp;o=sector">Wedge</option><option value="screener.ashx?v=121&amp;s=ta_p_channelup&amp;ft=4&amp;o=sector">Channel Up</option><option value="screener.ashx?v=121&amp;s=ta_p_channeldown&amp;ft=4&amp;o=sector">Channel Down</option><option value="screener.ashx?v=121&amp;s=ta_p_channel&amp;ft=4&amp;o=sector">Channel</option><option value="screener.ashx?v=121&amp;s=ta_p_doubletop&amp;ft=4&amp;o=sector">Double Top</option><option value="screener.ashx?v=121&amp;s=ta_p_doublebottom&amp;ft=4&amp;o=sector">Double Bottom</option><option value="screener.ashx?v=121&amp;s=ta_p_multipletop&amp;ft=4&amp;o=sector">Multiple Top</option><option value="screener.ashx?v=121&amp;s=ta_p_multiplebottom&amp;ft=4&amp;o=sector">Multiple Bottom</option><option value="screener.ashx?v=121&amp;s=ta_p_headandshoulders&amp;ft=4&amp;o=sector">Head &amp; Shoulders</option><option value="screener.ashx?v=121&amp;s=ta_p_headandshouldersinv&amp;ft=4&amp;o=sector">Head &amp; Shoulders Inverse</option></select>
+                                        <select id="signalSelect" style="width: 100%; visibility: visible;" class="body-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                            <option selected="selected" value="">None (all stocks)</option>
+                                            <option value="ta_topgainers">Top Gainers</option>
+                                            <option value="ta_toplosers">Top Losers</option>
+                                            <option value="ta_newhigh">New High</option>
+                                            <option value="ta_newlow">New Low</option>
+                                            <option value="ta_mostvolatile">Most Volatile</option>
+                                            <option value="ta_mostactive">Most Active</option>
+                                            <option value="ta_unusualvolume">Unusual Volume</option>
+                                            <option value="ta_overbought">Overbought</option>
+                                            <option value="ta_oversold">Oversold</option>
+                                            <option value="n_downgrades">Downgrades</option>
+                                            <option value="n_upgrades">Upgrades</option>
+                                            <option value="n_earningsbefore">Earnings Before</option>
+                                            <option value="n_earningsafter">Earnings After</option>
+                                            <option value="it_latestbuys">Recent Insider Buying</option>
+                                            <option value="it_latestsales">Recent Insider Selling</option>
+                                            <option value="n_majornews">Major News</option>
+                                            <option value="ta_p_horizontal">Horizontal S/R</option>
+                                            <option value="ta_p_tlresistance">TL Resistance</option>
+                                            <option value="ta_p_tlsupport">TL Support</option>
+                                            <option value="ta_p_wedgeup">Wedge Up</option>
+                                            <option value="ta_p_wedgedown">Wedge Down</option>
+                                            <option value="ta_p_wedgeresistance">Triangle Ascending</option>
+                                            <option value="ta_p_wedgesupport">Triangle Descending</option>
+                                            <option value="ta_p_wedge">Wedge</option>
+                                            <option value="ta_p_channelup">Channel Up</option>
+                                            <option value="ta_p_channeldown">Channel Down</option>
+                                            <option value="ta_p_channel">Channel</option>
+                                            <option value="ta_p_doubletop">Double Top</option>
+                                            <option value="ta_p_doublebottom">Double Bottom</option>
+                                            <option value="ta_p_multipletop">Multiple Top</option>
+                                            <option value="ta_p_multiplebottom">Multiple Bottom</option>
+                                            <option value="ta_p_headandshoulders">Head &amp; Shoulders</option>
+                                            <option value="ta_p_headandshouldersinv">Head &amp; Shoulders Inverse</option>
+                                        </select>
                                     </td>
                                     <td align="center" width="6%">
-                                    <span class="body-combo-title" style="cursor:pointer;" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Tickers] body=[<table width=300><tr><td class='tooltip_tab'>To screen through a selected set of stocks, you can enter one or more tickers directly, such as 'MSFT,GOOG,AAPL'. The screening process will run only on the specified stocks. No input ticker(s) equals all stocks. The <b>open in screener</b> option in the <b>Search</b>, will copy the listed tickers to the screener's ticker box automatically.</td></tr></table>] offsetx=[-100] delay=[500]">Tickers:</span></td>
+                                        <span class="body-combo-title" style="cursor:pointer;">Tickers:</span></td>
                                     <td align="left" width="26%">
-                                    <table width="100%" cellpadding="0" cellspacing="0" style="table-layout:fixed;">
-                                    <tbody><tr>
-                                    <td align="left" width="100%">
-                                    <input id="tickersInput" class="body-combo-text" style="width:100%" value="" type="text" onkeypress="if(event.keyCode==13){window.location='screener.ashx?v=121&amp;ft=4&amp;o=sector&amp;t=' + window.FLibs.getSanitizedTicker(document.getElementById('tickersInput').value, true)}">
-                                    </td>
-                                    </tr>
-                                    </tbody></table>
+                                        <table width="100%" cellpadding="0" cellspacing="0" style="table-layout:fixed;">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left" width="100%">
+                                                    <input id="tickersInput" class="body-combo-text" style="width:100%" value="" type="text">
+                                                </td>
+                                                
+                                            </tr>
+                                        </tbody></table>
                                     </td>
                                     <td>
-                                    <input type="button" value=">" data-boxover="Submit tickers" class="screener-combo-button" style="cursor:pointer" onclick="window.location='screener.ashx?v=121&amp;ft=4&amp;o=sector&amp;t=' +tickersInput.value"></td>
+                                        <input type="button" value=">" data-boxover="Submit tickers" class="screener-combo-button btn btn-white p-2 mr-2" style="cursor:pointer">
+                                    </td>
                                     <td align="left"><img src="gfx/nic2x2.gif" style="width:2px;height:22px" alt="" border="0"></td>
-                                    <td align="left" valign="top"><a href="screener.ashx?v=120&amp;ft=4&amp;o=sector" class="screener-filter_inv" data-boxover="cssbody=[tooltip_bdy] cssheader=[tooltip_hdr] header=[Filters] body=[<table width=300><tr><td class='tooltip_tab'>To optimize the screening by various stock-related criteria, you can use one or more <b>Filters</b>.</td></tr></table>] offsetx=[-305] delay=[500]">Filters <i class="arrow-up"></i></a></td>
+                                    <td align="left">
+                                        <a href="" class="screener-filter_inv btn btn-primary py-2">Filters <i class="arrow-up"></i></a></td>
                                     </tr>
                                 </tbody>
                             </table>
