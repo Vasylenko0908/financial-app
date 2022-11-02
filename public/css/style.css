@@ -126,3 +126,17 @@ form input{
 table select, input{
     color:#1d1d1d;
 }
+table select option{
+    height: 20px;
+}
+#filter-table-filters tr{
+    height: 20px;
+}
+#filter-table-tabs .btn{
+    padding:10px;
+    margin:4px;
+    width:126px;
+}
+.tab-pane tr span{
+    color:rgb(163, 163, 163);
+}
