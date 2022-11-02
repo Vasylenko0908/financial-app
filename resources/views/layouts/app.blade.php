@@ -41,7 +41,7 @@
             <main>
                 {{ $slot }}
             </main>
-            <footer class="fixed-bottom">
+            <footer>
                 @include('layouts.footer')
             </footer>
             
@@ -108,9 +108,9 @@
 		<script src="https://cdn.amcharts.com/lib/5/geodata/worldTimeZoneAreasLow.js"></script>
 		<!--end::Page Vendors Javascript-->
 		<!--begin::Page Custom Javascript(used by this page)-->
-
+        @yield('script')
 		<!--end::Page Custom Javascript-->
 		<!--end::Javascript-->
-        @yield('script')
+        
     </body>
 </html>

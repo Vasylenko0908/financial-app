@@ -1,6 +1,29 @@
 @section('script')
+<link href="{{ asset('assets/plugins/custom/datatables/datatables.bundle.css') }}" rel="stylesheet" type="text/css"/>
+<script src="{{ asset('assets/plugins/custom/datatables/datatables.bundle.js') }}"></script>
 <script>
         $( document ).ready(function() {
+                $('.tab-pane').hide();
+                $('.tab-pane').removeClass('show');
+                $('#kt_tab_pane_1').show();      
+                $('#kt_tab_pane_1').addClass('show'); 
+                $("#kt_datatable_example_1").DataTable({
+                "language": {
+                "lengthMenu": "Show _MENU_",
+                },
+                "dom":
+                "<'row'" +
+                "<'col-sm-6 d-flex align-items-center justify-conten-start'l>" +
+                "<'col-sm-6 d-flex align-items-center justify-content-end'f>" +
+                ">" +
+
+                "<'table-responsive'tr>" +
+
+                "<'row'" +
+                "<'col-sm-12 col-md-5 d-flex align-items-center justify-content-center justify-content-md-start'i>" +
+                "<'col-sm-12 col-md-7 d-flex align-items-center justify-content-center justify-content-md-end'p>" +
+                ">"
+                });
             $("#desc_btn").click(function(){
               $('.tab-pane').hide();
               $('.tab-pane').removeClass('show');
@@ -12,9 +35,16 @@
               $('.tab-pane').removeClass('show');
               $('#kt_tab_pane_2').show();
               $('#kt_tab_pane_2').addClass('show');      
-            });  
+            });
+            $("#cagr_btn").click(function(){
+              $('.tab-pane').hide();
+              $('.tab-pane').removeClass('show');
+              $('#kt_tab_pane_3').show();
+              $('#kt_tab_pane_3').addClass('show');      
+            });   
         });
 </script>
+
 @endsection
 <x-app-layout>
     
@@ -23,7 +53,7 @@
                 <table cellpadding="0">
                     <tbody>
                         <tr><td>
-                            <table id="filter-table-top" class="mt-6" width="100%" cellspacing="0" cellpadding="0">
+                            <table id="filter-table-top" class="mt-6 mb-3" width="100%" cellspacing="0" cellpadding="0">
                                 <tbody>
                                     <tr>
                                         <td width="1%"></td>
@@ -158,7 +188,7 @@
                             </table>
                         </td></tr>
                         <tr><td>
-                            <table id="filter-table-tabs" class=" border-t border-b mt-3" width="100%" height="21" cellspacing="0" cellpadding="0">
+                            <table id="filter-table-tabs" class=" border-t border-b" width="100%" height="21" cellspacing="0" cellpadding="0">
                                 <tbody>
                                     <tr>
                                         <td width="34%">
@@ -184,7 +214,7 @@
                                 </tbody>
                             </table>
                         </td></tr>
-                        <tr class="tab-pane fade show active" id="kt_tab_pane_1"><td colspan="30" valign="middle" align="center" class="filters-border">
+                        <tr class="tab-pane fade show" id="kt_tab_pane_1"><td colspan="30" valign="middle" align="center" class="filters-border border">
                             <table id="filter-table-filters" width="100%" cellspacing="1" cellpadding="1" style="table-layout:fixed;" class="table table-hover table-row-dashed table-row-gray-300">
                                 <tbody>
                                     <tr>
@@ -415,7 +445,7 @@
                                 </tbody>
                             </table>
                         </td></tr>
-                        <tr class="tab-pane fade" id="kt_tab_pane_2" role="tabpanel"><td colspan="30" valign="middle" align="center"  class="filters-border">
+                        <tr class="tab-pane fade" id="kt_tab_pane_2" role="tabpanel"><td colspan="30" valign="middle" align="center"  class="filters-border border">
                             <table width="100%" cellspacing="1" cellpadding="1" style="table-layout:fixed;" class="table table-hover table-row-dashed table-row-gray-300">
                                 <tbody>
                                     <tr>
@@ -516,7 +546,7 @@
                                         </td>
                                         <td width="10%" class="filters-cells">
                                             <select id="fs_fa_roa"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
-                                                <option selected="selected" value="">Any</option>
+                                                <option selected="selected" value="">Any</option><option value="pos">Positive (&gt;0%)</option><option value="neg">Negative (&lt;0%)</option><option value="verypos">Very Positive (&gt;15%)</option><option value="veryneg">Very Negative (&lt;-15%)</option><option value="u-50">Under -50%</option><option value="u-45">Under -45%</option><option value="u-40">Under -40%</option><option value="u-35">Under -35%</option><option value="u-30">Under -30%</option><option value="u-25">Under -25%</option><option value="u-20">Under -20%</option><option value="u-15">Under -15%</option><option value="u-10">Under -10%</option><option value="u-5">Under -5%</option><option value="o5">Over +5%</option><option value="o10">Over +10%</option><option value="o15">Over +15%</option><option value="o20">Over +20%</option><option value="o25">Over +25%</option><option value="o30">Over +30%</option><option value="o35">Over +35%</option><option value="o40">Over +40%</option><option value="o45">Over +45%</option><option value="o50">Over +50%</option><option value="range">Custom (Elite only)</option>
                                             </select>
                                         </td>
                                         <td width="10%" class="filters-cells pt-3" align="center">
@@ -524,7 +554,7 @@
                                         </td>
                                         <td width="10%" class="filters-cells">
                                             <select id="fs_fa_roe"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
-                                                <option selected="selected" value="">Any</option>
+                                                <option selected="selected" value="">Any</option><option value="pos">Positive (&gt;0%)</option><option value="neg">Negative (&lt;0%)</option><option value="verypos">Very Positive (&gt;30%)</option><option value="veryneg">Very Negative (&lt;-15%)</option><option value="u-50">Under -50%</option><option value="u-45">Under -45%</option><option value="u-40">Under -40%</option><option value="u-35">Under -35%</option><option value="u-30">Under -30%</option><option value="u-25">Under -25%</option><option value="u-20">Under -20%</option><option value="u-15">Under -15%</option><option value="u-10">Under -10%</option><option value="u-5">Under -5%</option><option value="o5">Over +5%</option><option value="o10">Over +10%</option><option value="o15">Over +15%</option><option value="o20">Over +20%</option><option value="o25">Over +25%</option><option value="o30">Over +30%</option><option value="o35">Over +35%</option><option value="o40">Over +40%</option><option value="o45">Over +45%</option><option value="o50">Over +50%</option><option value="range">Custom (Elite only)</option>
                                             </select>
                                         </td>
                                         <td width="10%" class="filters-cells pt-3" align="center">
@@ -627,6 +657,428 @@
                                                 <option selected="selected" value="">Any</option><option value="high">High (&gt;0.5)</option><option value="low">Low (&lt;0.1)</option><option value="u1">Under 1</option><option value="u0.9">Under 0.9</option><option value="u0.8">Under 0.8</option><option value="u0.7">Under 0.7</option><option value="u0.6">Under 0.6</option><option value="u0.5">Under 0.5</option><option value="u0.4">Under 0.4</option><option value="u0.3">Under 0.3</option><option value="u0.2">Under 0.2</option><option value="u0.1">Under 0.1</option><option value="o0.1">Over 0.1</option><option value="o0.2">Over 0.2</option><option value="o0.3">Over 0.3</option><option value="o0.4">Over 0.4</option><option value="o0.5">Over 0.5</option><option value="o0.6">Over 0.6</option><option value="o0.7">Over 0.7</option><option value="o0.8">Over 0.8</option><option value="o0.9">Over 0.9</option><option value="o1">Over 1</option><option value="frange">Custom (Elite only)</option>
                                             </select>
                                         </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="10%" class="filters-cells pt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">CAPEX TO REVENNU</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_capex"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option>
+                                            </select>
+                                        </td>
+                                        <td width="10%" class="filters-cells" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">INVENTORY TURNOVER</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_inventory"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option></select>
+                                        </td>
+                                        <td width="10%" class="filters-cells pt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">ASSET TURNOVER</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_assetturn"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option>
+                                            </select>
+                                        </td>
+                                        <td width="10%" class="filters-cells pt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">BUY BACK YEILD</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_buyback"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option></select>
+                                        </td>
+                                        <td width="10%" class="filters-cells pt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">PAYOUT RATIO</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_payoutratio"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option><option value="none">None (0%)</option><option value="pos">Positive (&gt;0%)</option><option value="low">Low (&lt;20%)</option><option value="high">High (&gt;50%)</option><option value="o0">Over 0%</option><option value="o10">Over 10%</option><option value="o20">Over 20%</option><option value="o30">Over 30%</option><option value="o40">Over 40%</option><option value="o50">Over 50%</option><option value="o60">Over 60%</option><option value="o70">Over 70%</option><option value="o80">Over 80%</option><option value="o90">Over 90%</option><option value="o100">Over 100%</option><option value="u10">Under 10%</option><option value="u20">Under 20%</option><option value="u30">Under 30%</option><option value="u40">Under 40%</option><option value="u50">Under 50%</option><option value="u60">Under 60%</option><option value="u70">Under 70%</option><option value="u80">Under 80%</option><option value="u90">Under 90%</option><option value="u100">Under 100%</option><option value="range">Custom (Elite only)</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="10%" class="filters-cells" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">AQUISITIONS VS MARKET CAP</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_aquisition"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option>
+                                            </select>
+                                        </td>
+                                        <td width="10%" class="filters-cells"></td>
+                                        <td width="10%" class="filters-cells"></td>
+                                        <td width="10%" class="filters-cells"></td>
+                                        <td width="10%" class="filters-cells"></td>
+                                        <td width="10%" class="filters-cells"></td>
+                                        <td width="10%" class="filters-cells"></td>
+                                        <td width="10%" class="filters-cells"></td>
+                                        <td width="10%" class="filters-cells"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td></tr>
+                        <tr class="tab-pane fade" id="kt_tab_pane_3"><td colspan="30" valign="middle" align="center" class="filters-border border">
+                            <table id="filter-table-filters" width="100%" cellspacing="1" cellpadding="1" style="table-layout:fixed;" class="table table-hover table-row-dashed table-row-gray-300">
+                                <tbody>
+                                    <tr>
+                                        <td width="10%" class="filters-cells mt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">REVENNUE</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_revennue"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option>
+                                            </select>
+                                        </td>
+                                        <td width="10%" class="filters-cells mt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">SALES</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_sales"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option>
+                                            </select>
+                                        </td>
+                                        <td width="10%" class="filters-cells mt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">FCF</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_fcf"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option>
+                                            </select>
+                                        </td>
+                                        <td width="10%" class="filters-cells mt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">NET INCOME</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_netincome"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option>
+                                            </select>
+                                        </td>
+                                        <td width="10%" class="filters-cells mt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">DIVIDENDS</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_dividends"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="10%" class="filters-cells pt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">GROSS MARGIN</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_grossmargin"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option><option value="pos">Positive (&gt;0%)</option><option value="neg">Negative (&lt;0%)</option><option value="high">High (&gt;50%)</option><option value="u90">Under 90%</option><option value="u80">Under 80%</option><option value="u70">Under 70%</option><option value="u60">Under 60%</option><option value="u50">Under 50%</option><option value="u45">Under 45%</option><option value="u40">Under 40%</option><option value="u35">Under 35%</option><option value="u30">Under 30%</option><option value="u25">Under 25%</option><option value="u20">Under 20%</option><option value="u15">Under 15%</option><option value="u10">Under 10%</option><option value="u5">Under 5%</option><option value="u0">Under 0%</option><option value="u-10">Under -10%</option><option value="u-20">Under -20%</option><option value="u-30">Under -30%</option><option value="u-50">Under -50%</option><option value="u-70">Under -70%</option><option value="u-100">Under -100%</option><option value="o0">Over 0%</option><option value="o5">Over 5%</option><option value="o10">Over 10%</option><option value="o15">Over 15%</option><option value="o20">Over 20%</option><option value="o25">Over 25%</option><option value="o30">Over 30%</option><option value="o35">Over 35%</option><option value="o40">Over 40%</option><option value="o45">Over 45%</option><option value="o50">Over 50%</option><option value="o60">Over 60%</option><option value="o70">Over 70%</option><option value="o80">Over 80%</option><option value="o90">Over 90%</option><option value="range">Custom (Elite only)</option>
+                                            </select>
+                                        </td>
+                                        <td width="10%" class="filters-cells pt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">OPERATING MARGIN</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_opermargin"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option><option value="pos">Positive (&gt;0%)</option><option value="neg">Negative (&lt;0%)</option><option value="veryneg">Very Negative (&lt;-20%)</option><option value="high">High (&gt;25%)</option><option value="u90">Under 90%</option><option value="u80">Under 80%</option><option value="u70">Under 70%</option><option value="u60">Under 60%</option><option value="u50">Under 50%</option><option value="u45">Under 45%</option><option value="u40">Under 40%</option><option value="u35">Under 35%</option><option value="u30">Under 30%</option><option value="u25">Under 25%</option><option value="u20">Under 20%</option><option value="u15">Under 15%</option><option value="u10">Under 10%</option><option value="u5">Under 5%</option><option value="u0">Under 0%</option><option value="u-10">Under -10%</option><option value="u-20">Under -20%</option><option value="u-30">Under -30%</option><option value="u-50">Under -50%</option><option value="u-70">Under -70%</option><option value="u-100">Under -100%</option><option value="o0">Over 0%</option><option value="o5">Over 5%</option><option value="o10">Over 10%</option><option value="o15">Over 15%</option><option value="o20">Over 20%</option><option value="o25">Over 25%</option><option value="o30">Over 30%</option><option value="o35">Over 35%</option><option value="o40">Over 40%</option><option value="o45">Over 45%</option><option value="o50">Over 50%</option><option value="o60">Over 60%</option><option value="o70">Over 70%</option><option value="o80">Over 80%</option><option value="o90">Over 90%</option><option value="range">Custom (Elite only)</option>
+                                            </select>
+                                        </td>
+                                        <td width="10%" class="filters-cells pt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">EBIT</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_evebit"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option>
+                                            </select>
+                                        </td>
+                                        <td width="10%" class="filters-cells pt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">EBITDA</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_ebitda"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option>
+                                            </select>
+                                        </td>
+                                        <td width="10%" class="filters-cells pt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">EBITA</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_ebita"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width="10%" class="filters-cells pt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">EQUITY</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_quity"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option><option value="pos">Positive (&gt;0%)</option><option value="neg">Negative (&lt;0%)</option><option value="high">High (&gt;50%)</option><option value="u90">Under 90%</option><option value="u80">Under 80%</option><option value="u70">Under 70%</option><option value="u60">Under 60%</option><option value="u50">Under 50%</option><option value="u45">Under 45%</option><option value="u40">Under 40%</option><option value="u35">Under 35%</option><option value="u30">Under 30%</option><option value="u25">Under 25%</option><option value="u20">Under 20%</option><option value="u15">Under 15%</option><option value="u10">Under 10%</option><option value="u5">Under 5%</option><option value="u0">Under 0%</option><option value="u-10">Under -10%</option><option value="u-20">Under -20%</option><option value="u-30">Under -30%</option><option value="u-50">Under -50%</option><option value="u-70">Under -70%</option><option value="u-100">Under -100%</option><option value="o0">Over 0%</option><option value="o5">Over 5%</option><option value="o10">Over 10%</option><option value="o15">Over 15%</option><option value="o20">Over 20%</option><option value="o25">Over 25%</option><option value="o30">Over 30%</option><option value="o35">Over 35%</option><option value="o40">Over 40%</option><option value="o45">Over 45%</option><option value="o50">Over 50%</option><option value="o60">Over 60%</option><option value="o70">Over 70%</option><option value="o80">Over 80%</option><option value="o90">Over 90%</option><option value="range">Custom (Elite only)</option>
+                                            </select>
+                                        </td>
+                                        <td width="10%" class="filters-cells pt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">ASSETS</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_assets"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option><option value="pos">Positive (&gt;0%)</option><option value="neg">Negative (&lt;0%)</option><option value="veryneg">Very Negative (&lt;-20%)</option><option value="high">High (&gt;25%)</option><option value="u90">Under 90%</option><option value="u80">Under 80%</option><option value="u70">Under 70%</option><option value="u60">Under 60%</option><option value="u50">Under 50%</option><option value="u45">Under 45%</option><option value="u40">Under 40%</option><option value="u35">Under 35%</option><option value="u30">Under 30%</option><option value="u25">Under 25%</option><option value="u20">Under 20%</option><option value="u15">Under 15%</option><option value="u10">Under 10%</option><option value="u5">Under 5%</option><option value="u0">Under 0%</option><option value="u-10">Under -10%</option><option value="u-20">Under -20%</option><option value="u-30">Under -30%</option><option value="u-50">Under -50%</option><option value="u-70">Under -70%</option><option value="u-100">Under -100%</option><option value="o0">Over 0%</option><option value="o5">Over 5%</option><option value="o10">Over 10%</option><option value="o15">Over 15%</option><option value="o20">Over 20%</option><option value="o25">Over 25%</option><option value="o30">Over 30%</option><option value="o35">Over 35%</option><option value="o40">Over 40%</option><option value="o45">Over 45%</option><option value="o50">Over 50%</option><option value="o60">Over 60%</option><option value="o70">Over 70%</option><option value="o80">Over 80%</option><option value="o90">Over 90%</option><option value="range">Custom (Elite only)</option>
+                                            </select>
+                                        </td>
+                                        <td width="10%" class="filters-cells pt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">GOODWILL</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_goodwill"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option>
+                                            </select>
+                                        </td>
+                                        <td width="10%" class="filters-cells pt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">INVENTORY</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_inventory"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option>
+                                            </select>
+                                        </td>
+                                        <td width="10%" class="filters-cells pt-3" align="center">
+                                            <span class="screener-combo-title fs-5" style="cursor:pointer;">NET PPE</span>
+                                        </td>
+                                        <td width="10%" class="filters-cells">
+                                            <select id="fs_fa_netppe"  class="screener-combo-text form-select form-select-sm form-select-solid" data-control="select2" >
+                                                <option selected="selected" value="">Any</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td></tr>
+                        <tr><td>
+                            <table id="kt_datatable_example_1" class="table table-row-bordered gy-5 ">
+                                <thead>
+                                    <tr class="fw-bold fs-6 text-muted" align="center">
+                                        <th>No</th>
+                                        <th>Ticker</th>
+                                        <th>Company Name</th>
+                                        <th>Sector</th>
+                                        <th>Market Cap</th>
+                                        <th>P/E</th>
+                                        <th>P/FCF</th>
+                                        <th>ROiC</th>
+                                        <th>Net Margin</th>
+                                        <th>Gross Margin</th>
+                                        <th>Insider</th>
+                                        <th>Ownership</th>
+                                    </tr>
+                                </thead>
+                                <tbody align="center">
+                                    <tr>
+                                        <td>1</td>
+                                        <td>AA</td>
+                                        <td>Agilent Technology</td>
+                                        <td>41.93</td>
+                                        <td>23.01</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>AAB</td>
+                                        <td>Agilent Technology</td>
+                                        <td>41.93</td>
+                                        <td>23.01</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>63.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>AAS</td>
+                                        <td>Agilent Technology</td>
+                                        <td>41.93</td>
+                                        <td>23.01</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>AA</td>
+                                        <td>Agilent Technology</td>
+                                        <td>41.93</td>
+                                        <td>23.01</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>AAB</td>
+                                        <td>Agilent Technology</td>
+                                        <td>41.93</td>
+                                        <td>23.01</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>63.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>AAS</td>
+                                        <td>Agilent Technology</td>
+                                        <td>41.93</td>
+                                        <td>23.01</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>AA</td>
+                                        <td>Agilent Technology</td>
+                                        <td>41.93</td>
+                                        <td>23.01</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>AAB</td>
+                                        <td>Agilent Technology</td>
+                                        <td>41.93</td>
+                                        <td>23.01</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>63.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>AAS</td>
+                                        <td>Agilent Technology</td>
+                                        <td>41.93</td>
+                                        <td>23.01</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>AA</td>
+                                        <td>Agilent Technology</td>
+                                        <td>41.93</td>
+                                        <td>23.01</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>AAB</td>
+                                        <td>Agilent Technology</td>
+                                        <td>41.93</td>
+                                        <td>23.01</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>63.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>AAS</td>
+                                        <td>Agilent Technology</td>
+                                        <td>41.93</td>
+                                        <td>23.01</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>AA</td>
+                                        <td>Agilent Technology</td>
+                                        <td>41.93</td>
+                                        <td>23.01</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>AAB</td>
+                                        <td>Agilent Technology</td>
+                                        <td>41.93</td>
+                                        <td>23.01</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>63.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>AAS</td>
+                                        <td>Agilent Technology</td>
+                                        <td>41.93</td>
+                                        <td>23.01</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
+                                        <td>6.16</td>
                                     </tr>
                                 </tbody>
                             </table>

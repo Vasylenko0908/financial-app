@@ -78,15 +78,15 @@ footer .container{
     color:#1d1d1d;
 }
 .search-box .search-form-control{
- padding-left:30px;
+    padding-left:30px;
 }
 .search-box span{
     margin-top:8px;
     margin-left:7px;
 }
 .container{
-    margin-top:74px;
-    margin-bottom:90px;
+    margin-top:55px;
+    margin-bottom:60px;
 }
 .dark-setting {
     float:right;
