@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "98b0cce5124ef41fc2c3c18042ab0208",
+    "content-hash": "9a4aae5ff0cf60fb135c75af9f5ff703",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -2768,6 +2768,62 @@
                 "source": "https://github.com/bobthecow/psysh/tree/v0.11.8"
             },
             "time": "2022-07-28T14:25:11+00:00"
+        },
+        {
+            "name": "radicalloop/eodhistoricaldata",
+            "version": "5.0.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/radicalloop/eodhistoricaldata.git",
+                "reference": "678d85b97d4498fe5564a89f74227528b172fac8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/radicalloop/eodhistoricaldata/zipball/678d85b97d4498fe5564a89f74227528b172fac8",
+                "reference": "678d85b97d4498fe5564a89f74227528b172fac8",
+                "shasum": ""
+            },
+            "require": {
+                "guzzlehttp/guzzle": "^7.0.1",
+                "illuminate/contracts": "^8.0|^9.0",
+                "illuminate/support": "^8.0|^9.0"
+            },
+            "require-dev": {
+                "mikey179/vfsstream": "^1.6",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "RadicalLoop\\Eod\\EodServiceProvider"
+                    ],
+                    "aliases": {
+                        "Eod": "RadicalLoop\\Eod\\Facades\\Eod"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "RadicalLoop\\Eod\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jignesh Solanki",
+                    "email": "jignesh.radicalloop@gmail.com"
+                }
+            ],
+            "description": "Wrapper for eodhistoricaldata.com",
+            "support": {
+                "issues": "https://github.com/radicalloop/eodhistoricaldata/issues",
+                "source": "https://github.com/radicalloop/eodhistoricaldata/tree/5.0.0"
+            },
+            "time": "2022-08-05T05:39:17+00:00"
         },
         {
             "name": "ralouphie/getallheaders",
