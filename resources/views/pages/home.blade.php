@@ -503,7 +503,7 @@
                                         <div id="kt_charts_widget_20" class="min-h-auto ps-4 pe-6" data-kt-chart-info="Revenue" style="height: 300px"></div>
                                     </div>
                                     <!--begin::Table container-->
-                                    <div class="table-responsive currency_detail ps-8 pe-8">
+                                    <div class="table-responsive currency_detail ps-8">
                                         <table class="table table-hover">
                                         <thead>
                                         <tr class="fw-bold fs-6">
@@ -896,7 +896,7 @@
                                 </div>
                                 <div class="row p-2">
                                 <div id="kt_charts_widget_1_chart" style="height: 350px"></div>
-                                <div class="table-responsive currency_detail ps-8 pe-8">
+                                <div class="table-responsive ps-8">
                                     <ul class="nav nav-tabs nav-line-tabs nav-line-tabs-2x mb-4 fs-6">
                                         <li class="nav-item">
                                             <a class="nav-link active" data-bs-toggle="tab" href="#kt_tab_pane_6">INCOME STATEMENT</a>
@@ -909,7 +909,7 @@
                                         </li>
                                     </ul>
                                     <div class="tab-content" id="myTabContent">
-                                        <div class="tab-pane fade active show" id="kt_tab_pane_6" role="tabpanel">
+                                        <div class="tab-pane fade active show currency_detail" id="kt_tab_pane_6" role="tabpanel">
                                             <table class="table table-hover">
                                                 <thead>
                                                 <tr class="fw-bold fs-6">
@@ -1092,7 +1092,7 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <div class="tab-pane fade" id="kt_tab_pane_7" role="tabpanel">
+                                        <div class="tab-pane fade currency_detail" id="kt_tab_pane_7" role="tabpanel">
                                             <table class="table table-hover">
                                                 <thead>
                                                 <tr class="fw-bold fs-6">
@@ -1275,7 +1275,7 @@
                                                 </tbody>
                                             </table>
                                         </div>
-                                        <div class="tab-pane fade" id="kt_tab_pane_8" role="tabpanel">
+                                        <div class="tab-pane fade currency_detail" id="kt_tab_pane_8" role="tabpanel">
                                             <table class="table table-hover">
                                                 <thead>
                                                 <tr class="fw-bold fs-6">

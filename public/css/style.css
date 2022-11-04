@@ -124,9 +124,7 @@ input{
 .card-header{
     padding:0px 5px !important;
 }
-.currency_detail table{
-    color:aliceblue;
-}
+
 .grid-cols-3{
     grid-template-columns: repeat(3,minmax(0,1fr));
 }
@@ -156,6 +154,9 @@ table select option{
 .tab-pane tr span{
     color:rgb(163, 163, 163);
 }
+.form-select.form-select-solid ,.form-control.form-control-solid{
+    background-color: var(--bs-gray-400);
+}
 /* start home page */
 .overall-leftbar{
     background-color: var(--white);
@@ -166,6 +167,32 @@ table select option{
 .nav-line-tabs .nav-item .nav-link {
     color:var(--bs-gray-900);
 }
+
+.currency_detail {
+    width: 100%;
+    overflow: auto;
+    margin-left: 1em;
+    width:97%;
+  }
+  
+  .currency_detail > table {
+    margin-left: 13em;
+  }
+  
+  .currency_detail > table > * > tr > th:first-child,
+  .currency_detail > table > * > tr > td:first-child {
+    position: absolute;
+    width: 14em;
+    margin-left: -14em;
+    background-color: var(--bs-gray-100);
+  }
+  
+  .currency_detail > table > * > tr > th,
+  .currency_detail > table > * > tr > td {
+    /* Without this, if a cell wraps onto two lines, the first column
+     * will look bad, and may need padding. */
+    white-space: nowrap;
+  }
 /* end home page */
 /* dark mode */
 body.dark-mode {

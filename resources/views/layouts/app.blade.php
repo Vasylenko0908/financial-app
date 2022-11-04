@@ -66,18 +66,33 @@
 		<script src="{{ asset('assets/js/scripts.bundle.js') }}"></script>
         <script>
         $( document ).ready(function() {
+            
             $('#header__sun').click(function(){
                 
                 $("#header__sun").addClass("hidden");        
-                $("#header__moon").removeClass("hidden");
+                $("#header__indeterminate").removeClass("hidden");        
+                $("#header__moon").addClass("hidden");
+                if(!$('body').hasClass('dark-mode'))
                 $('body').addClass('dark-mode');
                 
                 KTApp.setThemeMode("dark", function() {
                     console.log("changed to dark mode");
                 });
             });
+            $('#header__indeterminate').click(function(){
+                
+                $("#header__sun").addClass("hidden");        
+                $("#header__moon").removeClass("hidden");
+                $("#header__indeterminate").addClass("hidden");
+                if(!$('body').hasClass('dark-mode'))
+                    $('body').addClass('dark-mode');
+                KTApp.setThemeMode("dark", function() {
+                    console.log("changed to dark mode");
+                });
+            });
             $('#header__moon').click(function(){
                 $("#header__sun").removeClass("hidden");        
+                $("#header__indeterminate").addClass("hidden");
                 $("#header__moon").addClass("hidden");
                 $('body').removeClass('dark-mode');
                 KTApp.setThemeMode("light", function() {
