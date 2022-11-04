@@ -1,17 +1,25 @@
+:root {
+    --cus-light-content-bg-clr:rgb(245,248,250);
+    --cus-dark-content-bg-clr:#212121;
+    --cus-dark-footer-bg-clr:#424242;
+    --cus-gen-primary:#009ef7;
+}
+/* light mode */
 body{
-    color: white;
-    background-color: #212121;
+    color:var(--bs-dark);
+    background-color: var(--cus-light-content-bg-clr);
 }
 nav .fixed-top{
-    border-bottom:1px solid #1d1d1d ;
+    box-shadow:0px 0px 2px 0px rgba(0, 0, 255, .2);
+    border-bottom:0px solid #b3b3b3 ;
 }
 nav a{
-    color:white !important;
+    color: var(--bs-dark) !important;
     text-decoration: none !important;
     text-transform: uppercase;
 }
 .antialiased>.main-screen{
-    background-color:#212121;
+    background-color: var(--cus-light-content-bg-clr);
 }
 .first_title{
     color:red;
@@ -26,26 +34,26 @@ nav a{
 }
 .company_search input{
     border-radius: 4px;
-    background-color: #424242;
+    background-color: var(--white);
     border-width: 0px;
 }
 .list-item1{
     height: 115px;
-    background-color: #424242;
+    background-color: var(--white);
     border-radius: 4px;
 }
 .list-item1 a{
     text-decoration: none;
 }
 .list-item1 h5{
-    color: #8bcaf9;
+    color: var(--primary);
 }
 .list-item1 p{
-    color: #c7c7be;
+    color: var(--bs-gray-700);
 }
 footer .footer-nav-btm{
     height: 80px;
-    background-color: #424242;
+    background-color: var(--white);
     text-align: center;
 }
 footer .container{
@@ -71,7 +79,7 @@ footer .container{
     font-weight: 800;
 }
 .sign_btn button{
-    color: white;
+    color: var(--white);
     margin-top:10px;
 }
 .sign_btn form a{
@@ -94,8 +102,8 @@ footer .container{
     padding-right:20px;
 }
 .h-menu{
-    background-color: #212121;
-}
+    background-color:var(--white);
+}  
 input{
     color:#6d6d6d;
 }
@@ -140,3 +148,42 @@ table select option{
 .tab-pane tr span{
     color:rgb(163, 163, 163);
 }
+/* dark mode */
+body.dark-mode {
+    color: var(--white);
+    background-color: var(--cus-dark-content-bg-clr);
+    
+}
+body.dark-mode nav a {
+    color:var(--white) !important;
+}
+body.dark-mode nav .h-menu {
+    background-color: var(--cus-dark-content-bg-clr);
+}
+body.dark-mode.antialiased>.main-screen{
+    background-color:var(--cus-dark-content-bg-clr); 
+}
+body.dark-mode .company_search input{
+    background-color: var(--cus-dark-footer-bg-clr);
+}
+body.dark-mode .list-item1{
+    background-color: var(--cus-dark-footer-bg-clr);
+}
+body.dark-mode nav .fixed-top{
+    border-bottom:1px solid #1d1d1d ;
+}
+body.dark-mode footer .footer-nav-btm{
+    background-color: var(--cus-dark-footer-bg-clr);
+}
+body.dark-mode .list-item1 h5{
+    color: #8bcaf9;
+}
+body.dark-mode .form-control:focus{
+    background-color: var(--bs-gray-300) !important;
+    color: var(--bs-gray-800);
+}
+body.dark-mode .form-control{
+    color: var(--bs-gray-800);
+}
+
+
