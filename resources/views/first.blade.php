@@ -1,5 +1,5 @@
 <x-app-layout>
-    <div class="py-12">
+    <div class="py-12 min-h-screen">
         <div class="col-md-6 mx-auto sm:px-6 lg:px-8 company_search">
                 <div class="row">
                     <div class="col-md-12">
