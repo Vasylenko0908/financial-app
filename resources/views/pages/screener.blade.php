@@ -347,7 +347,7 @@
                                                 <option selected="selected" value="">Any</option>
                                             </select>
                                         </td>
-                                        <td width="10%" class="filters-cells pt-3" align="center">
+                                        <td width="10%" class="filters-cells" align="center">
                                             <span class="screener-combo-title fs-5" style="cursor:pointer;">% Float held by institutions</span>
                                         </td>
                                         <td width="10%" class="filters-cells">
@@ -355,7 +355,7 @@
                                                 <option selected="selected" value="">Any</option><option value="u1">Under 1M</option><option value="u5">Under 5M</option><option value="u10">Under 10M</option><option value="u20">Under 20M</option><option value="u50">Under 50M</option><option value="u100">Under 100M</option><option value="o1">Over 1M</option><option value="o2">Over 2M</option><option value="o5">Over 5M</option><option value="o10">Over 10M</option><option value="o20">Over 20M</option><option value="o50">Over 50M</option><option value="o100">Over 100M</option><option value="o200">Over 200M</option><option value="o500">Over 500M</option><option value="o1000">Over 1000M</option><option value="range">Custom (Elite only)</option>
                                             </select>
                                         </td>
-                                        <td width="10%" class="filters-cells pt-3" align="center">
+                                        <td width="10%" class="filters-cells" align="center">
                                             <span class="screener-combo-title fs-5" style="cursor:pointer;">% shares Outstanding</span>
                                         </td>
                                         <td width="10%" class="filters-cells">
