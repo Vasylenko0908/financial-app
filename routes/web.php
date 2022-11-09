@@ -20,10 +20,8 @@ use App\Http\Controllers\PricingController;
 */
 
  
+Route::get('/', [MainController::class, 'first']);
 
-Route::get('/', function () {
-    return view('first');
-});
 Route::middleware(['auth'])->group(function () {    
     Route::get('/home', [MainController::class, 'index']);    
 });

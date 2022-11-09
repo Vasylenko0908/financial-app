@@ -15,7 +15,7 @@
 							<!--begin::Search-->
 							<div id="kt_header_search" class="header-search d-flex align-items-center w-100" data-kt-search-keypress="true" data-kt-search-min-length="2" data-kt-search-enter="enter" data-kt-search-layout="menu" data-kt-search-responsive="false" data-kt-menu-trigger="auto" data-kt-menu-permanent="true" data-kt-menu-placement="bottom-start">
 								<!--begin::Form-->
-								<form data-kt-search-element="form" class="w-100 position-relative" autocomplete="on">
+								<form data-kt-search-element="form" class="d-none d-lg-block w-100 position-relative mb-5 mb-lg-0" autocomplete="off">
 									<!--begin::Hidden input(Added to disable form autocomplete)-->
 									<input type="hidden" />
 									<!--end::Hidden input-->

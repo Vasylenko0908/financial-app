@@ -3,9 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Eod;
 
 class MainController extends Controller
 {
+    
     /**
      * Display a listing of the resource.
      *
@@ -13,7 +15,24 @@ class MainController extends Controller
      */
     public function index()
     {
+        $stock = Eod::stock();
+        
+        // JSON 
+        
+
+        // // Save CSV to specific path
+        // $stock->realTime('AAPL.US')->save('path/to/save/csv/stock.csv');
+
+        // For other parameters, for ex. dividend api with other params
+        // $stock->dividend('AAPL.US', ['from' => '2017-01-01'])->json();
         return view('pages.home');
+    }
+    
+    public function first(){
+        $stock = Eod::exchange();
+        $content = $stock->exchange_list()->json();
+        var_dump($content);
+        return view('first',['content'=>$content]);
     }
 
     /**
