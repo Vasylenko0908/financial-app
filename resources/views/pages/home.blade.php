@@ -1667,7 +1667,7 @@
                     <!--begin::Body-->
                     <div class="card-body px-1">
                         <!--begin:: container-->
-                        <div class="flex my-2 border-b-2">
+                        <div class="flex my-2">
                             <div class="w-10 ">
                             <i class="bi bi-bookmark-star-fill"></i>
                             </div>
@@ -1676,7 +1676,8 @@
                             <div class="w-20p text-center">Chg</div>
                             <div class="w-20p text-center">Chg%</div>
                         </div>
-                        <ul id="sortlist" class="mt-3">
+                        <div class="separator my-1"></div>
+                        <ul id="sortlist">
                         <li class="bg-hover-light-dark overlay overflow-hidden" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="tooltip-dark" title="Tooltip on left">
                             <div class="flex my-2 overlay-wrapper">
                                 <div class="w-10 " data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="tooltip-dark" data-bs-content="<button class='btn-circle'>sdas</button>">
