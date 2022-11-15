@@ -1599,171 +1599,18 @@
                     </div>
                     <!--end::Header-->
                     <!--begin::Body-->
-                    <div class="card-body pt-3">
-                        <!--begin::Table container-->
-                        <div class="table-responsive">
-                            <!--begin::Table-->
-                            <table class="table table-row-dashed align-middle gs-0 gy-3 my-0">
-                                <!--begin::Table head-->
-                                <thead>
-                                    <tr class="fs-7 fw-bolder text-gray-400 border-bottom-0">
-                                        <th class="p-0 pb-3 text-start">SYMBOL</th>
-                                        <th class="p-0 pb-3 min-w-75px text-end">LAST</th>
-                                        <th class="p-0 pb-3 min-w-75px text-end">CHG</th>
-                                        <th class="p-0 pb-3 min-w-75px text-end pe-12">CHG%</th>
-                                    </tr>
-                                </thead>
-                                <!--end::Table head-->
-                                <!--begin::Table body-->
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <div class="symbol symbol-20px me-3">
-                                                    <img src="assets/media/stock/600x600/img-49.jpg" class="" alt="" />
-                                                </div>
-                                                <div class="d-flex justify-content-start flex-column">
-                                                    <a href="#" class="text-gray-800 fw-bolder text-hover-primary mb-1 fs-6">Mivy App</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="text-end pe-0">
-                                            <span class="text-gray-600 fw-bolder fs-6">$32,400</span>
-                                        </td>
-                                        <td class="text-end pe-0">
-                                            <!--begin::Label-->
-                                            <span class="badge badge-success fs-base">
-                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
-                                            <span class="svg-icon svg-icon-5 svg-icon-white ms-n1">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                    <rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)" fill="currentColor" />
-                                                    <path d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z" fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->9.2%</span>
-                                            <!--end::Label-->
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <div class="symbol symbol-20px me-3">
-                                                    <img src="assets/media/stock/600x600/img-40.jpg" class="" alt="" />
-                                                </div>
-                                                <div class="d-flex justify-content-start flex-column">
-                                                    <a href="#" class="text-gray-800 fw-bolder text-hover-primary mb-1 fs-6">Avionica</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="text-end pe-0">
-                                            <span class="text-gray-600 fw-bolder fs-6">$256,910</span>
-                                        </td>
-                                        <td class="text-end pe-0">
-                                            <!--begin::Label-->
-                                            <span class="badge badge-danger fs-base">
-                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr065.svg-->
-                                            <span class="svg-icon svg-icon-5 svg-icon-white ms-n1">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                    <rect opacity="0.5" x="11" y="18" width="13" height="2" rx="1" transform="rotate(-90 11 18)" fill="currentColor" />
-                                                    <path d="M11.4343 15.4343L7.25 11.25C6.83579 10.8358 6.16421 10.8358 5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75L11.2929 18.2929C11.6834 18.6834 12.3166 18.6834 12.7071 18.2929L18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25C17.8358 10.8358 17.1642 10.8358 16.75 11.25L12.5657 15.4343C12.2533 15.7467 11.7467 15.7467 11.4343 15.4343Z" fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->0.4%</span>
-                                            <!--end::Label-->
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <div class="symbol symbol-20px me-3">
-                                                    <img src="assets/media/stock/600x600/img-39.jpg" class="" alt="" />
-                                                </div>
-                                                <div class="d-flex justify-content-start flex-column">
-                                                    <a href="#" class="text-gray-800 fw-bolder text-hover-primary mb-1 fs-6">Charto CRM</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="text-end pe-0">
-                                            <span class="text-gray-600 fw-bolder fs-6">$8,220</span>
-                                        </td>
-                                        <td class="text-end pe-0">
-                                            <!--begin::Label-->
-                                            <span class="badge badge-success fs-base">
-                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
-                                            <span class="svg-icon svg-icon-5 svg-icon-white ms-n1">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                    <rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)" fill="currentColor" />
-                                                    <path d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z" fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->9.2%</span>
-                                            <!--end::Label-->
-                                        </td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <div class="symbol symbol-20px me-3">
-                                                    <img src="assets/media/stock/600x600/img-47.jpg" class="" alt="" />
-                                                </div>
-                                                <div class="d-flex justify-content-start flex-column">
-                                                    <a href="#" class="text-gray-800 fw-bolder text-hover-primary mb-1 fs-6">Tower Hill</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="text-end pe-0">
-                                            <span class="text-gray-600 fw-bolder fs-6">$74,000</span>
-                                        </td>
-                                        <td class="text-end pe-0">
-                                            <!--begin::Label-->
-                                            <span class="badge badge-success fs-base">
-                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
-                                            <span class="svg-icon svg-icon-5 svg-icon-white ms-n1">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                    <rect opacity="0.5" x="13" y="6" width="13" height="2" rx="1" transform="rotate(90 13 6)" fill="currentColor" />
-                                                    <path d="M12.5657 8.56569L16.75 12.75C17.1642 13.1642 17.8358 13.1642 18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25L12.7071 5.70711C12.3166 5.31658 11.6834 5.31658 11.2929 5.70711L5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75C6.16421 13.1642 6.83579 13.1642 7.25 12.75L11.4343 8.56569C11.7467 8.25327 12.2533 8.25327 12.5657 8.56569Z" fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->9.2%</span>
-                                            <!--end::Label-->
-                                        </td>
-                                        
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="d-flex align-items-center">
-                                                <div class="symbol symbol-20px me-3">
-                                                    <img src="assets/media/stock/600x600/img-48.jpg" class="" alt="" />
-                                                </div>
-                                                <div class="d-flex justify-content-start flex-column">
-                                                    <a href="#" class="text-gray-800 fw-bolder text-hover-primary mb-1 fs-6">9 Degree</a>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="text-end pe-0">
-                                            <span class="text-gray-600 fw-bolder fs-6">$183,300</span>
-                                        </td>
-                                        <td class="text-end pe-0">
-                                            <!--begin::Label-->
-                                            <span class="badge badge-danger fs-base">
-                                            <!--begin::Svg Icon | path: icons/duotune/arrows/arr065.svg-->
-                                            <span class="svg-icon svg-icon-5 svg-icon-white ms-n1">
-                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                                    <rect opacity="0.5" x="11" y="18" width="13" height="2" rx="1" transform="rotate(-90 11 18)" fill="currentColor" />
-                                                    <path d="M11.4343 15.4343L7.25 11.25C6.83579 10.8358 6.16421 10.8358 5.75 11.25C5.33579 11.6642 5.33579 12.3358 5.75 12.75L11.2929 18.2929C11.6834 18.6834 12.3166 18.6834 12.7071 18.2929L18.25 12.75C18.6642 12.3358 18.6642 11.6642 18.25 11.25C17.8358 10.8358 17.1642 10.8358 16.75 11.25L12.5657 15.4343C12.2533 15.7467 11.7467 15.7467 11.4343 15.4343Z" fill="currentColor" />
-                                                </svg>
-                                            </span>
-                                            <!--end::Svg Icon-->0.4%</span>
-                                            <!--end::Label-->
-                                        </td>
-                                        
-                                    </tr>
-                                </tbody>
-                                <!--end::Table body-->
-                            </table>
+                    <div class="card-body px-1">
+                        <!--begin:: container-->
+                        <div class="flex my-2">
+                            <div class="w-10 px-2">
+                            <i class="bi bi-bookmark-star-fill"></i>
+                            </div>
+                            <div class="w-25 ">Symbol</div>
+                            <div class="w-20 text-center">Last</div>
+                            <div class="w-20 text-center">Chg</div>
+                            <div class="w-20 text-center">Chg%</div>
                         </div>
-                        <!--end::Table-->
+                        <!--end::container-->
                     </div>
                     <!--end: Card Body-->
                 </div>

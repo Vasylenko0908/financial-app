@@ -124,6 +124,18 @@ input{
 .card-header{
     padding:0px 5px !important;
 }
+.w-10{
+    width: 10% !important;
+}
+.w-20{
+    width: 20% !important;
+}
+.w-30{
+    width: 30% !important;
+}
+.w-40{
+    width: 40% !important;
+}
 
 .grid-cols-3{
     grid-template-columns: repeat(3,minmax(0,1fr));
