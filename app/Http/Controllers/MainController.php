@@ -30,9 +30,9 @@ class MainController extends Controller
     
     public function first(){
         $stock = Eod::exchange();
-        $content = $stock->exchange_list()->json();
-        var_dump($content);
-        return view('first',['content'=>$content]);
+        // $content = $stock->exchange_list()->json();
+        // var_dump($content);
+        return view('first');
     }
 
     /**

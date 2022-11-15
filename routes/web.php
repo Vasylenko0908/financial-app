@@ -21,7 +21,7 @@ use App\Http\Controllers\PricingController;
 
  
 Route::get('/', [MainController::class, 'first']);
-
+Route::get('/company/{name}',[MainController::class, 'index']);
 Route::middleware(['auth'])->group(function () {    
     Route::get('/home', [MainController::class, 'index']);    
 });

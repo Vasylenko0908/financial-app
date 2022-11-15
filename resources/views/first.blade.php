@@ -1,3 +1,6 @@
+@section('script')
+<script src="{{ asset('assets/js/pages/first.js') }}"></script>
+@endsection
 <x-app-layout>
     <div class="py-12 min-h-screen">
         <div class="col-md-6 mx-auto sm:px-6 lg:px-8 company_search">
@@ -13,10 +16,11 @@
                     <!--begin::Aside search-->
 						<div class="col-md-8 aside-search py-1">
 							<!--begin::Search-->
-							<div id="kt_header_search" class="header-search d-flex align-items-center w-100" data-kt-search-keypress="true" data-kt-search-min-length="2" data-kt-search-enter="enter" data-kt-search-layout="menu" data-kt-search-responsive="false" data-kt-menu-trigger="auto" data-kt-menu-permanent="true" data-kt-menu-placement="bottom-start">
+							<div id="kt_header_search" class="header-search d-flex align-items-center w-100" data-kt-search-keypress="true" data-kt-search-min-length="1" data-kt-search-enter="enter" data-kt-search-layout="menu" data-kt-menu-trigger="auto" data-kt-menu-overflow="false" data-kt-menu-permanent="true" data-kt-menu-placement="bottom-start">
 								<!--begin::Form-->
 								<form data-kt-search-element="form" class="d-none d-lg-block w-100 position-relative mb-5 mb-lg-0" autocomplete="off">
 									<!--begin::Hidden input(Added to disable form autocomplete)-->
+									@csrf
 									<input type="hidden" />
 									<!--end::Hidden input-->
 									<!--begin::Icon-->
@@ -51,6 +55,105 @@
 									<!--end::Reset-->
 								</form>
 								<!--end::Form-->
+								<!--begin::Menu-->
+								<div data-kt-search-element="content" class="menu menu-sub menu-sub-dropdown p-7 w-600px w-md-600px">
+									<!--begin::Wrapper-->
+									<div data-kt-search-element="wrapper">
+										<!--begin::Recently viewed-->
+										<div data-kt-search-element="results" class="d-none">
+											<!--begin::Items-->
+											<div class="mh-200px mh-lg-350px">
+												<!--begin::Item-->
+												<ul>
+													<li class="d-flex bg-hover-primary ">
+														<a href="{{url('company/AAPL')}}" class="flex fs-6 text-gray-700">
+															<div class="w-125px w-md-150px py-1  text-left"><span class="ml-2">A</span></div>
+															<div class="flex-1  px-1 lg:px-2 py-1 text-left border-l-2 turncate"><span class="ml-2">Adfsfddswerrwe11111111111111111111111</span></div>
+															<div class="flex  px-1 lg:px-2 py-1 text-right items-center turncate self-center text-gray-400"><span class="ml-4">A</span></div>
+														</a>		
+													</li>
+													<li class="d-flex bg-hover-primary ">
+														<a href="#" class="flex fs-6 text-gray-700">
+															<div class="w-125px w-md-150px py-1  text-left"><span class="ml-2">A</span></div>
+															<div class="flex-1  px-1 lg:px-2 py-1 text-left border-l-2 turncate"><span class="ml-2">Adfsfddswerrwe1111111111111111</span></div>
+															<div class="flex  px-1 lg:px-2 py-1 text-right items-center turncate self-center text-gray-400"><span class="ml-4">A</span></div>
+														</a>		
+													</li>
+													<li class="d-flex bg-hover-primary ">
+														<a href="#" class="flex fs-6 text-gray-700">
+															<div class="w-125px w-md-150px py-1  text-left"><span class="ml-2">A</span></div>
+															<div class="flex-1  px-1 lg:px-2 py-1 text-left border-l-2 turncate"><span class="ml-2">Adfsfddswerrwe1111111111111111111111</span></div>
+															<div class="flex  px-1 lg:px-2 py-1 text-right items-center turncate self-center text-gray-400"><span class="ml-4">A</span></div>
+														</a>		
+													</li>
+													<li class="d-flex bg-hover-primary ">
+														<a href="#" class="flex fs-6 text-gray-700">
+															<div class="w-125px w-md-150px py-1  text-left"><span class="ml-2">A</span></div>
+															<div class="flex-1  px-1 lg:px-2 py-1 text-left border-l-2 turncate"><span class="ml-2">Adfsfddswerrwe11111111111111111111111</span></div>
+															<div class="flex  px-1 lg:px-2 py-1 text-right items-center turncate self-center text-gray-400"><span class="ml-4">A</span></div>
+														</a>		
+													</li>
+													<li class="d-flex bg-hover-primary ">
+														<a href="#" class="flex fs-6 text-gray-700">
+															<div class="w-125px w-md-150px py-1  text-left"><span class="ml-2">A</span></div>
+															<div class="flex-1  px-1 lg:px-2 py-1 text-left border-l-2 turncate"><span class="ml-2">Adfsfddswerrwe1111111111111111</span></div>
+															<div class="flex  px-1 lg:px-2 py-1 text-right items-center turncate self-center text-gray-400"><span class="ml-4">A</span></div>
+														</a>		
+													</li>
+													<li class="d-flex bg-hover-primary ">
+														<a href="#" class="flex fs-6 text-gray-700">
+															<div class="w-125px w-md-150px py-1  text-left"><span class="ml-2">A</span></div>
+															<div class="flex-1  px-1 lg:px-2 py-1 text-left border-l-2 turncate"><span class="ml-2">Adfsfddswerrwe1111111111111111111111</span></div>
+															<div class="flex  px-1 lg:px-2 py-1 text-right items-center turncate self-center text-gray-400"><span class="ml-4">A</span></div>
+														</a>		
+													</li>
+													<li class="d-flex bg-hover-primary ">
+														<a href="#" class="flex fs-6 text-gray-700">
+															<div class="w-125px w-md-150px py-1  text-left"><span class="ml-2">A</span></div>
+															<div class="flex-1  px-1 lg:px-2 py-1 text-left border-l-2 turncate"><span class="ml-2">Adfsfddswerrwe11111111111111111111111</span></div>
+															<div class="flex  px-1 lg:px-2 py-1 text-right items-center turncate self-center text-gray-400"><span class="ml-4">A</span></div>
+														</a>		
+													</li>
+													<li class="d-flex bg-hover-primary ">
+														<a href="#" class="flex fs-6 text-gray-700">
+															<div class="w-125px w-md-150px py-1  text-left"><span class="ml-2">A</span></div>
+															<div class="w-125px w-md-250px  px-1 lg:px-2 py-1 text-left border-l-2 turncate"><span class="ml-2">Adfsfddswerrwe1111111111111111</span></div>
+															<div class="flex  px-1 lg:px-2 py-1 text-right items-center turncate self-center text-gray-400"><span class="ml-4">A</span></div>
+														</a>		
+													</li>
+													
+												</ul>
+												
+											</div>
+											<!--end::Items-->
+										</div>
+										<!--end::Recently viewed-->
+										<!--begin::Recently viewed-->
+										<div class="d-none" data-kt-search-element="main">
+											
+											<!--begin::Items-->
+											<div class="mh-200px mh-lg-325px">
+												
+												<!--end::Item-->
+												
+											</div>
+											<!--end::Items-->
+										</div>
+										<!--end::Recently viewed-->
+										<!--begin::Empty-->
+										<div data-kt-search-element="empty" class="text-center d-none">
+											
+											<!--begin::Message-->
+											<div class="pb-10 fw-bold">
+												<h3 class="text-gray-600 fs-5 mb-2">No result found</h3>
+												<div class="text-muted fs-7">Please try again with a different query</div>
+											</div>
+											<!--end::Message-->
+										</div>
+										<!--end::Empty-->
+									</div>
+								</div>
+								
 							</div>
 							<!--end::Search-->
 						</div>
@@ -85,4 +188,3 @@
         </div>
     </div>
 </x-app-layout>
-<x
