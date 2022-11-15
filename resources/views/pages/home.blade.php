@@ -1503,7 +1503,7 @@
                         <!--begin::Toolbar-->
                         <div class="card-toolbar">
                             <!--begin::Menu-->
-                            <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end">
+                            <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary justify-content-end" data-bs-toggle="modal" data-bs-target="#add_company" data-bs-toggle="tooltip" data-bs-placement="top" data-bs-custom-class="tooltip-dark" title="Add Company">
                                 <!--begin::Svg Icon | path: icons/duotune/general/gen023.svg-->
                                 <span class="svg-icon svg-icon-1 svg-icon-gray-300 me-n1">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -1513,6 +1513,72 @@
                                 </span>
                                 <!--end::Svg Icon-->
                             </button>
+                            <div class="modal fade" tabindex="-1" id="add_company">
+                                <div class="modal-dialog">
+                                    <div class="modal-content position-absolute">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title">ADD COMPANY</h5>
+
+                                            <!--begin::Close-->
+                                            <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                                                <span class="svg-icon svg-icon-2x"></span>
+                                            </div>
+                                            <!--end::Close-->
+                                        </div>
+
+                                        <div class="modal-body">
+                                            <div class="d-flex flex-stack mb-5">
+                                                <!--begin::Search-->
+                                                <div class="d-flex align-items-center position-relative my-1">
+                                                    <span class="svg-icon svg-icon-2">...</span>
+                                                    <input type="text" data-kt-docs-table-filter="search" class="form-control form-control-solid w-250px ps-15" placeholder="Search Customers"/>
+                                                </div>
+                                                <!--end::Search-->
+
+                                                <!--begin::Toolbar-->
+                                                <div class="d-flex justify-content-end" data-kt-docs-table-toolbar="base">
+                                                    <!--begin::Filter-->
+                                                    <button type="button" class="btn btn-light-primary me-3" >
+                                                        <span class="svg-icon svg-icon-2">...</span>
+                                                        Filter
+                                                    </button>
+                                                    <!--end::Filter-->
+                                                </div>
+                                                <!--end::Toolbar-->
+                                                
+                                            </div>
+                                            <!--end::Wrapper-->
+
+                                        <!--begin::Datatable-->
+                                        <table id="company_list" class="table align-middle table-row-dashed fs-6 gy-5">
+                                            <thead>
+                                            <tr class="text-start text-gray-400 fw-bolder fs-7 text-uppercase gs-0">
+                                                <th class="w-10px pe-2">
+                                                    <div class="form-check form-check-sm form-check-custom form-check-solid me-3">
+                                                        <input class="form-check-input" type="checkbox" data-kt-check="true" data-kt-check-target="#company_list .form-check-input" value="1"/>
+                                                    </div>
+                                                </th>
+                                                <th>Customer Name</th>
+                                                <th>Email</th>
+                                                <th>Company</th>
+                                                <th>Payment Method</th>
+                                                <th>Created Date</th>
+                                                <th class="text-end min-w-100px">Actions</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody class="text-gray-600 fw-bold">
+                                            </tbody>
+                                        </table>
+                                        <!--end::Datatable-->                                       
+                                        </div>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Save changes</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <button class="btn btn-icon btn-color-gray-400 btn-active-color-primary" data-kt-menu-trigger="click" data-kt-menu-placement="bottom-end" data-kt-menu-overflow="true">
                                 <!--begin::Svg Icon | path: icons/duotune/general/gen023.svg-->
                                 <span class="svg-icon svg-icon-1 svg-icon-gray-300 me-n1">
@@ -1601,15 +1667,53 @@
                     <!--begin::Body-->
                     <div class="card-body px-1">
                         <!--begin:: container-->
-                        <div class="flex my-2">
-                            <div class="w-10 px-2">
+                        <div class="flex my-2 border-b-2">
+                            <div class="w-10 ">
                             <i class="bi bi-bookmark-star-fill"></i>
                             </div>
                             <div class="w-25 ">Symbol</div>
-                            <div class="w-20 text-center">Last</div>
-                            <div class="w-20 text-center">Chg</div>
-                            <div class="w-20 text-center">Chg%</div>
+                            <div class="w-20p text-center">Last</div>
+                            <div class="w-20p text-center">Chg</div>
+                            <div class="w-20p text-center">Chg%</div>
                         </div>
+                        <ul id="sortlist" class="mt-3">
+                        <li class="bg-hover-light-dark overlay overflow-hidden" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="tooltip-dark" title="Tooltip on left">
+                            <div class="flex my-2 overlay-wrapper">
+                                <div class="w-10 " data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="tooltip-dark" data-bs-content="<button class='btn-circle'>sdas</button>">
+                                <i class="bi bi-bookmark-star-fill"></i>
+                                </div>
+                                <div class="w-25 ">AAPL</div>
+                                <div class="w-20p text-center">12.5</div>
+                                <div class="w-20p text-center">13.6</div>
+                                <div class="w-20p text-center">13.7</div>
+                            </div>
+                            <div class="overlay-layer">
+                            <a href="#" class="btn btn-icon btn-icon-muted btn-color-primary"><i class="bi bi-x"></i></a>
+                            </div>
+                        </li>
+                        <li class="bg-hover-light-dark" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="tooltip-dark" title="Tooltip on left">
+                            <div class="flex my-2">
+                                <div class="w-10" data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="tooltip-dark"  data-bs-content="And here's some amazing content. It's very engaging. Right?">
+                                <i class="bi bi-bookmark-star-fill"></i>
+                                </div>
+                                <div class="w-25 ">AAPL</div>
+                                <div class="w-20p text-center">12.5</div>
+                                <div class="w-20p text-center">13.6</div>
+                                <div class="w-20p text-center">13.7</div>
+                            </div>
+                        </li>
+                        <li class="bg-hover-light-dark" data-bs-toggle="tooltip" data-bs-placement="left" data-bs-custom-class="tooltip-dark" title="Tooltip on left">
+                            <div class="flex my-2">
+                                <div class="w-10 " data-bs-toggle="popover" data-bs-placement="right" data-bs-custom-class="tooltip-dark" data-bs-content="And here's some amazing content. It's very engaging. Right?">
+                                <i class="bi bi-bookmark-star-fill"></i>
+                                </div>
+                                <div class="w-25 ">AAPL</div>
+                                <div class="w-20p text-center">12.5</div>
+                                <div class="w-20p text-center">13.6</div>
+                                <div class="w-20p text-center">13.7</div>
+                            </div>
+                        </li>
+                        </ul>
                         <!--end::container-->
                     </div>
                     <!--end: Card Body-->
@@ -1620,3 +1724,133 @@
         </div>    
     </div>  
 </x-app-layout>
+<style>
+    /* (A) LIST STYLES */
+.slist {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.slist li {
+  /* margin: 2px; */
+  /* padding: 5px; */
+  border-bottom: 1px solid #dfdfdf;
+}
+
+/* (B) DRAG-AND-DROP HINT */
+.slist li.hint {
+  /* border: 1px solid var(--bs-primary);
+  background: #feffb4; */
+}
+.slist li:hover {
+  border: 1px solid var(--bs-info);
+  /* background: #feffb4; */
+}
+.slist li.active {
+  border: 1px solid var(--bs-primary);
+  /* background: var(--bs-primary); */
+}
+</style>
+<<script>
+window.addEventListener("DOMContentLoaded", () => {
+  slist(document.getElementById("sortlist"));
+});
+function slist (target) {
+  // (A) SET CSS + GET ALL LIST ITEMS
+  target.classList.add("slist");
+  let items = target.getElementsByTagName("li"), current = null;
+
+  // (B) MAKE ITEMS DRAGGABLE + SORTABLE
+  for (let i of items) {
+    // (B1) ATTACH DRAGGABLE
+    i.draggable = true;
+    
+    // (B2) DRAG START - YELLOW HIGHLIGHT DROPZONES
+    i.ondragstart = (ev) => {
+      current = i;
+      for (let it of items) {
+        if (it != current) { it.classList.add("hint"); }
+      }
+    };
+    
+    // (B3) DRAG ENTER - RED HIGHLIGHT DROPZONE
+    i.ondragenter = (ev) => {
+      if (i != current) { i.classList.add("active"); }
+    };
+
+    // (B4) DRAG LEAVE - REMOVE RED HIGHLIGHT
+    i.ondragleave = () => {
+      i.classList.remove("active");
+    };
+
+    // (B5) DRAG END - REMOVE ALL HIGHLIGHTS
+    i.ondragend = () => { for (let it of items) {
+        it.classList.remove("hint");
+        it.classList.remove("active");
+    }};
+ 
+    // (B6) DRAG OVER - PREVENT THE DEFAULT "DROP", SO WE CAN DO OUR OWN
+    i.ondragover = (evt) => { evt.preventDefault(); };
+ 
+    // (B7) ON DROP - DO SOMETHING
+    i.ondrop = (evt) => {
+      evt.preventDefault();
+      if (i != current) {
+        let currentpos = 0, droppedpos = 0;
+        for (let it=0; it<items.length; it++) {
+          if (current == items[it]) { currentpos = it; }
+          if (i == items[it]) { droppedpos = it; }
+        }
+        if (currentpos < droppedpos) {
+          i.parentNode.insertBefore(current, i.nextSibling);
+        } else {
+          i.parentNode.insertBefore(current, i);
+        }
+      }
+    };
+  }
+}
+var element = document.querySelector('#add_company');
+dragElement(element);
+
+function dragElement(elmnt) {
+    var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    if (elmnt.querySelector('.modal-content')) {
+        // if present, the header is where you move the DIV from:
+        elmnt.querySelector('.modal-content').onmousedown = dragMouseDown;
+    } else {
+        // otherwise, move the DIV from anywhere inside the DIV:
+        elmnt.onmousedown = dragMouseDown;
+    }
+
+    function dragMouseDown(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // get the mouse cursor position at startup:
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        document.onmouseup = closeDragElement;
+        // call a function whenever the cursor moves:
+        document.onmousemove = elementDrag;
+    }
+
+    function elementDrag(e) {
+        e = e || window.event;
+        e.preventDefault();
+        // calculate the new cursor position:
+        pos1 = pos3 - e.clientX;
+        pos2 = pos4 - e.clientY;
+        pos3 = e.clientX;
+        pos4 = e.clientY;
+        // set the element's new position:
+        elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+    }
+
+    function closeDragElement() {
+        // stop moving when mouse button is released:
+        document.onmouseup = null;
+        document.onmousemove = null;
+    }
+}
+</script>
