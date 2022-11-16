@@ -44,7 +44,7 @@ class MainController extends Controller
     public function search($name)
     {
         //
-        $data = $this->exchange_symbol;
+        $data = json_decode($this->exchange_symbol);
         usort($data, function ($a, $b) use ($name) {
             // find the term in first entry
             $t1 = preg_match("/^.*?\b($name\w*)\b.*\$/i", $a['result_title'], $matches) ? $matches[1] : '';
