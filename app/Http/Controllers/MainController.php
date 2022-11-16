@@ -30,7 +30,7 @@ class MainController extends Controller
     
     public function first(){
         $stock = Eod::exchange();
-        $content = $stock->exchange_symbol_list('NASDAQ')->json();
+        $content = $stock->exchange_symbol_list('US')->json();
         dd($content);
         return view('first');
     }
