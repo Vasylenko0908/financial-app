@@ -45,12 +45,14 @@ class MainController extends Controller
     {
         //
         $data = json_decode($this->exchange_symbol);
-        // var_dump($data);
+        var_dump($data);
+        exit;
+        
         usort($data, function ($a, $b) use ($name) {
             // find the term in first entry
-            $t1 = preg_match("/^.*?\b($name\w*)\b.*\$/i", $a['Name'], $matches) ? $matches[1] : '';
+            $t1 = preg_match("/^.*?\b($name\w*)\b.*\$/i", $a['Name'], $matches) ? $matches : '';
             // find the term in second entry
-            $t2 = preg_match("/^.*?\b($name\w*)\b.*\$/i", $b['Name'], $matches) ? $matches[1] : '';
+            $t2 = preg_match("/^.*?\b($name\w*)\b.*\$/i", $b['Name'], $matches) ? $matches : '';
             // check if the terms were found
             if ($t1 == '' && $t2 != '') return 1;
             if ($t1 != '' && $t2 == '') return -1;
