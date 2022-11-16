@@ -22,6 +22,7 @@
 									<!--begin::Hidden input(Added to disable form autocomplete)-->
 									@csrf
 									<input type="hidden" />
+									<input type="hidden" id="_token" value="{{ csrf_token() }}" />
 									<!--end::Hidden input-->
 									<!--begin::Icon-->
 									<!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->

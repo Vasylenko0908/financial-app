@@ -1,6 +1,15 @@
 $(document).ready(function(){
     $(".search-input").keyup(function(){
-        // alert($(this).val());
-    })
+        $.ajax({
+            type: "GET",
+            url: '/search/' + $(this).val(),
+            headers: {
+                "X-CSRF-TOKEN": $('#_token').val()
+            },
+            dataType: 'json',
+            success: function(result) {
+            }
+        });
+    });
     
 });
