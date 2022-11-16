@@ -64,7 +64,7 @@ class MainController extends Controller
             $result[$i] = $data[$i];
         }
         return response()->json([
-            'result'=>json_encode($result)
+            'result'=>$result
         ]);
     }
 
