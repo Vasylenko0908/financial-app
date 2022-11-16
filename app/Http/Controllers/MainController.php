@@ -7,12 +7,16 @@ use Eod;
 
 class MainController extends Controller
 {
-    
+    public $exchange_symbol;
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct(){
+        $exchange = Eod::exchange();
+        $exchange_symbol = $exchange->exchange_symbol_list('US')->json();
+    }
     public function index()
     {
         $stock = Eod::stock();
@@ -29,9 +33,8 @@ class MainController extends Controller
     }
     
     public function first(){
-        $stock = Eod::exchange();
-        $content = $stock->exchange_symbol_list('US')->json();
-        dd($content);
+        
+        dd($exchange_symbol);
         return view('first');
     }
 
