@@ -48,9 +48,9 @@ class MainController extends Controller
 
         usort($data, function ($a, $b) use ($name) {
             // find the term in first entry
-            $t1 = preg_match("/^.*?\b($name\w*)\b.*\$/i", $a['result_title'], $matches) ? $matches[1] : '';
+            $t1 = preg_match("/^.*?\b($name\w*)\b.*\$/i", $a['Name'], $matches) ? $matches[1] : '';
             // find the term in second entry
-            $t2 = preg_match("/^.*?\b($name\w*)\b.*\$/i", $b['result_title'], $matches) ? $matches[1] : '';
+            $t2 = preg_match("/^.*?\b($name\w*)\b.*\$/i", $b['Name'], $matches) ? $matches[1] : '';
             // check if the terms were found
             if ($t1 == '' && $t2 != '') return 1;
             if ($t1 != '' && $t2 == '') return -1;
