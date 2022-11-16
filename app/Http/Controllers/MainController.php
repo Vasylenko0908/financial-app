@@ -34,7 +34,6 @@ class MainController extends Controller
     
     public function first(){
         
-        dd($exchange_symbol);
         return view('first');
     }
 
