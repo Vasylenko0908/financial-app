@@ -45,6 +45,10 @@ class MainController extends Controller
     {
         //
         $data = json_decode($this->exchange_symbol);
+        $data->transform(function($i) {
+            return (array)$i;
+        });
+        $data = $data->toArray();
         // var_dump($data);
         usort($data, function ($a, $b) use ($name) {
             // find the term in first entry
