@@ -64,6 +64,7 @@
 										<div data-kt-search-element="results" class="d-none">
 											<!--begin::Items-->
 											<div class="mh-200px mh-lg-350px">
+												<input type="hidden" class="base_url" value="{{url('company/')}}"/>
 												<!--begin::Item-->
 												<ul id="search-result">
 													<li class="d-flex bg-hover-primary ">
