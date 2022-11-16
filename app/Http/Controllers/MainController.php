@@ -45,7 +45,7 @@ class MainController extends Controller
     {
         //
         $data = json_decode($this->exchange_symbol);
-        dd(count($data));
+
         // var_dump($data);
         usort($data, function ($a, $b) use ($name) {
             // find the term in first entry
