@@ -58,6 +58,13 @@ class MainController extends Controller
             // found the same keyword, sort on the whole title
             return strcmp($a['Name'], $b['Name']);
         });
+        $result=array();
+        for($i=0; $i<6; $i++){
+            $result[$i] = $data[$i];
+        }
+        return response()->json([
+            'result'=>json_encode($result)
+        ]);
     }
 
     /**
