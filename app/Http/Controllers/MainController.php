@@ -7,7 +7,7 @@ use Eod;
 
 class MainController extends Controller
 {
-    public $exchange_symbol;
+    private $exchange_symbol;
     /**
      * Display a listing of the resource.
      *
@@ -15,7 +15,7 @@ class MainController extends Controller
      */
     public function __construct(){
         $exchange = Eod::exchange();
-        $exchange_symbol = $exchange->exchange_symbol_list('US')->json();
+        $this->exchange_symbol = $exchange->exchange_symbol_list('US')->json();
     }
     public function index()
     {
@@ -33,7 +33,7 @@ class MainController extends Controller
     }
     
     public function first(){
-        
+        dd($this->exchange_symbol);
         return view('first');
     }
 
