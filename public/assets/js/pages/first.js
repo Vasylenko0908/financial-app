@@ -8,7 +8,7 @@ $(document).ready(function(){
             },
             dataType: 'json',
             success: function(data) {
-                alert(result);
+
                 $('ul#search-result').children().remove();
                 base_url = $('.base_url').val();
                 var html='';
