@@ -65,7 +65,7 @@
 											<!--begin::Items-->
 											<div class="mh-200px mh-lg-350px">
 												<!--begin::Item-->
-												<ul>
+												<ul id="search-result">
 													<li class="d-flex bg-hover-primary ">
 														<a href="{{url('company/AAPL')}}" class="flex fs-6 text-gray-700">
 															<div class="w-125px w-md-150px py-1  text-left"><span class="ml-2">A</span></div>

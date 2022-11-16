@@ -8,6 +8,8 @@ $(document).ready(function(){
             },
             dataType: 'json',
             success: function(result) {
+                alert(result);
+                $('ul#search-result').children().remove();
             }
         });
     });
