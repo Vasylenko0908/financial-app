@@ -61,7 +61,7 @@
 									<!--begin::Wrapper-->
 									<div data-kt-search-element="wrapper">
 										<!--begin::Recently viewed-->
-										<div data-kt-search-element="results" class="d-none">
+										<div data-kt-search-element="results" class="">
 											<!--begin::Items-->
 											<div class="mh-200px mh-lg-350px">
 												<input type="hidden" class="base_url" value="{{url('company/')}}"/>
