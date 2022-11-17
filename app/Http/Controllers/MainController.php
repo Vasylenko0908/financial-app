@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Eod;
+use App\Models\Countries;
 
 class MainController extends Controller
 {
@@ -44,8 +45,9 @@ class MainController extends Controller
     public function search($name)
     {
         //
+        dd($this->exchange_symbol);
         $data = json_decode($this->exchange_symbol);
-        // var_dump($data);
+        
         usort($data, function ($a, $b) use ($name) {
             // find the term in first entry
             $t1 = preg_match("/^.*?\b($name\w*)\b.*\$/i", $a->Name, $matches) ? $matches[1] : '';
@@ -64,6 +66,7 @@ class MainController extends Controller
         $result=array();
         for($i=0; $i<6; $i++){
             $result[$i] = $data[$i];
+            // $result[$i]->flag = Countries::select('filename')->where('code',$data[$i]->Code)->get();
         }
         return response()->json([
             'result'=>$result
