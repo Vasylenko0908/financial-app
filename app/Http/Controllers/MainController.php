@@ -34,6 +34,7 @@ class MainController extends Controller
     }
     
     public function first(){
+        dd($this->exchange_symbol);
         return view('first');
     }
 
@@ -45,7 +46,7 @@ class MainController extends Controller
     public function search($name)
     {
         //
-        dd($this->exchange_symbol);
+
         $data = json_decode($this->exchange_symbol);
         
         usort($data, function ($a, $b) use ($name) {
