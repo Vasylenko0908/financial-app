@@ -68,32 +68,25 @@
         $( document ).ready(function() {
             
             $('#header__sun').click(function(){
-                
-                $("#header__sun").addClass("hidden");        
-                $("#header__indeterminate").removeClass("hidden");        
-                $("#header__moon").addClass("hidden");
                 darkmode();
             });
             $('#header__indeterminate').click(function(){
-                
-                $("#header__sun").addClass("hidden");        
-                $("#header__moon").removeClass("hidden");
-                $("#header__indeterminate").addClass("hidden");
-                darkmode();
+                defaultmode();
             });
             $('#header__moon').click(function(){
-                $("#header__sun").removeClass("hidden");        
-                $("#header__indeterminate").addClass("hidden");
-                $("#header__moon").addClass("hidden");
                 lightmode();
-                
             });
-            if(localStorage.getItem("mode")=="dark")
+            if(localStorage.getItem("mode")=="light")
+                lightmode();
+            else if(localStorage.getItem("mode")=="dark")
                 darkmode();
             else
-                lightmode();
+                defaultmode();
              // set dark mode
             function darkmode(){
+                $("#header__sun").addClass("hidden");        
+                $("#header__indeterminate").removeClass("hidden");        
+                $("#header__moon").addClass("hidden");
                 if(!$('body').hasClass('dark-mode'))
                     $('body').addClass('dark-mode');
                 localStorage.setItem("mode", "dark");
@@ -102,10 +95,24 @@
                 });
             } 
             function lightmode(){
+                $("#header__sun").removeClass("hidden");        
+                $("#header__indeterminate").addClass("hidden");
+                $("#header__moon").addClass("hidden");
                 $('body').removeClass('dark-mode');
                 localStorage.setItem("mode", "light");
                 KTApp.setThemeMode("light", function() {
                     console.log("changed to light mode");
+                });
+            }
+            function defaultmode(){
+                $("#header__sun").addClass("hidden");        
+                $("#header__moon").removeClass("hidden");
+                $("#header__indeterminate").addClass("hidden");
+                if(!$('body').hasClass('dark-mode'))
+                    $('body').addClass('dark-mode');
+                localStorage.setItem("mode", "default");
+                KTApp.setThemeMode("dark", function() {
+                    console.log("changed to dark mode");
                 });
             }
            
