@@ -2,7 +2,7 @@ $(document).ready(function(){
     $(".search-input").keyup(function(){
         if($(this).val().length > 0){
             $.ajax({
-                type: "GET",
+                type: "POST",
                 url: '/search/' + $(this).val(),
                 headers: {
                     "X-CSRF-TOKEN": $('#_token').val()
