@@ -46,7 +46,6 @@ class MainController extends Controller
     public function search($name)
     {
         //
-
         $data = json_decode($this->exchange_symbol);
         
         usort($data, function ($a, $b) use ($name) {
