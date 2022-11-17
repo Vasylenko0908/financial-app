@@ -67,13 +67,13 @@
 												<input type="hidden" class="base_url" value="{{url('company/')}}"/>
 												<!--begin::Item-->
 												<ul id="search-result">
-													<!-- <li class="d-flex bg-hover-primary ">
+													<li class="d-flex bg-hover-primary ">
 														<a href="{{url('company/AAPL')}}" class="flex fs-6 text-gray-700">
 															<div class="w-125px w-md-150px py-1  text-left"><span class="ml-2">A</span></div>
 															<div class="flex-1  px-1 lg:px-2 py-1 text-left border-l-2 turncate"><span class="ml-2">Adfsfddswerrwe11111111111111111111111</span></div>
 															<div class="flex  px-1 lg:px-2 py-1 text-right items-center turncate self-center text-gray-400"><span class="ml-4">A</span></div>
 														</a>		
-													</li> -->
+													</li>
 												</ul>
 												
 											</div>
