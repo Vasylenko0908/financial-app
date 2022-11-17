@@ -72,36 +72,42 @@
                 $("#header__sun").addClass("hidden");        
                 $("#header__indeterminate").removeClass("hidden");        
                 $("#header__moon").addClass("hidden");
-                if(!$('body').hasClass('dark-mode'))
-                $('body').addClass('dark-mode');
-                
-                KTApp.setThemeMode("dark", function() {
-                    console.log("changed to dark mode");
-                });
+                darkmode();
             });
             $('#header__indeterminate').click(function(){
                 
                 $("#header__sun").addClass("hidden");        
                 $("#header__moon").removeClass("hidden");
                 $("#header__indeterminate").addClass("hidden");
-                if(!$('body').hasClass('dark-mode'))
-                    $('body').addClass('dark-mode');
-                KTApp.setThemeMode("dark", function() {
-                    console.log("changed to dark mode");
-                });
+                darkmode();
             });
             $('#header__moon').click(function(){
                 $("#header__sun").removeClass("hidden");        
                 $("#header__indeterminate").addClass("hidden");
                 $("#header__moon").addClass("hidden");
+                lightmode();
+                
+            });
+            if(localStorage.getItem("mode")=="dark")
+                darkmode();
+            else
+                lightmode();
+             // set dark mode
+            function darkmode(){
+                if(!$('body').hasClass('dark-mode'))
+                    $('body').addClass('dark-mode');
+                localStorage.setItem("mode", "dark");
+                KTApp.setThemeMode("dark", function() {
+                    console.log("changed to dark mode");
+                });
+            } 
+            function lightmode(){
                 $('body').removeClass('dark-mode');
+                localStorage.setItem("mode", "light");
                 KTApp.setThemeMode("light", function() {
                     console.log("changed to light mode");
                 });
-                
-            });
-             // set dark mode
-
+            }
            
             
         });
