@@ -16,7 +16,7 @@
                     <!--begin::Aside search-->
 						<div class="col-md-8 aside-search py-1">
 							<!--begin::Search-->
-							<div id="kt_header_search" class="header-search d-flex align-items-center w-100" data-kt-search-keypress="true" data-kt-search-min-length="1" data-kt-search-enter="enter" data-kt-search-layout="menu" data-kt-menu-trigger="auto" data-kt-menu-overflow="false" data-kt-menu-permanent="true" data-kt-menu-placement="bottom-start">
+							<div id="kt_header_search" class="header-search d-flex align-items-center w-100"  data-kt-search-layout="menu" data-kt-menu-trigger="auto" data-kt-menu-overflow="false" data-kt-menu-permanent="true" data-kt-menu-placement="bottom-start">
 								<!--begin::Form-->
 								<form data-kt-search-element="form" class="d-none d-lg-block w-100 position-relative mb-5 mb-lg-0" autocomplete="off">
 									<!--begin::Hidden input(Added to disable form autocomplete)-->
@@ -67,15 +67,8 @@
 												<input type="hidden" class="base_url" value="{{url('company/')}}"/>
 												<!--begin::Item-->
 												<ul id="search-result">
-													<!-- <li class="d-flex bg-hover-primary ">
-														<a href="{{url('company/AAPL')}}" class="flex fs-6 text-gray-700">
-															<div class="w-125px w-md-150px py-1  text-left"><span class="ml-2">A</span></div>
-															<div class="flex-1  px-1 lg:px-2 py-1 text-left border-l-2 turncate"><span class="ml-2">Adfsfddswerrwe11111111111111111111111</span></div>
-															<div class="flex  px-1 lg:px-2 py-1 text-right items-center turncate self-center text-gray-400"><span class="ml-4">A</span></div>
-														</a>		
-													</li> -->
+													
 												</ul>
-												
 											</div>
 											<!--end::Items-->
 										</div>
