@@ -1752,7 +1752,7 @@
   /* background: var(--bs-primary); */
 }
 </style>
-<<script>
+<script>
 window.addEventListener("DOMContentLoaded", () => {
   slist(document.getElementById("sortlist"));
 });
