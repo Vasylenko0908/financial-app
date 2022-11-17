@@ -14,8 +14,8 @@ class MainController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function __construct(){
-        // $exchange = Eod::exchange();
-        // $this->exchange_symbol = $exchange->exchange_symbol_list('US')->json();
+        $exchange = Eod::exchange();
+        $this->exchange_symbol = $exchange->exchange_symbol_list('US')->json();
     }
     public function index()
     {

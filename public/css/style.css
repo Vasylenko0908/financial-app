@@ -179,7 +179,7 @@ table select option{
 .nav-line-tabs .nav-item .nav-link {
     color:var(--bs-gray-900);
 }
-.truncate{
+.turncate{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

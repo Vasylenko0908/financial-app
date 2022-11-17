@@ -64,16 +64,21 @@
 										<div data-kt-search-element="results" class="">
 											<!--begin::Items-->
 											<div class="mh-200px mh-lg-350px">
-												<input type="hidden" class="base_url" value="{{url('company/')}}"/>
+												<input type="hidden" class="base_url" value="{{url('/')}}"/>
 												<!--begin::Item-->
 												<ul id="search-result">
-													<li class="d-flex bg-hover-primary ">
+													<!-- <li class="w-full bg-hover-primary ">
 														<a href="{{url('company/AAPL')}}" class="flex fs-6 text-gray-700">
-															<div class="w-125px w-md-150px py-1  text-left"><span class="ml-2">A</span></div>
-															<div class="flex-1  px-1 lg:px-2 py-1 text-left border-l-2 turncate"><span class="ml-2">Adfsfddswerrwe11111111111111111111111</span></div>
-															<div class="flex  px-1 lg:px-2 py-1 text-right items-center turncate self-center text-gray-400"><span class="ml-4">A</span></div>
+															<div class="w-125px w-md-100px py-1  text-left"><span class="ml-2">A</span></div>
+															<div class="flex-1  px-1 lg:px-2 py-1 text-left border-l-2 turncate"><span class="ml-2">Adfsfddswersdsdsdsdsdsdsdsddsssssssssssssssssssssssssssssssrwe11111111111111111111111</span></div>
+															<div class="flex  px-2 lg:px-3 py-1 text-right items-center turncate self-center">
+																<span class="mt-1">NYSE</span>
+															</div>
+															<div class="flex px-3 lg:px-3 py-1 items-center self-center">
+																<img src="{{asset('assets/media/flags/united-states.svg')}}" class="w-4 h-4 my-auto inline ml-1">
+															</div>
 														</a>		
-													</li>
+													</li> -->
 												</ul>
 												
 											</div>
