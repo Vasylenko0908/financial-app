@@ -15,8 +15,8 @@ class MainController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function __construct(){
-        $exchange = Eod::exchange();
-        $this->exchange_symbol = $exchange->exchange_symbol_list('US')->json();
+        // $exchange = Eod::exchange();
+        // $this->exchange_symbol = $exchange->exchange_symbol_list('US')->json();
     }
     public function index()
     {
@@ -64,12 +64,23 @@ class MainController extends Controller
         //     // found the same keyword, sort on the whole title
         //     return strcmp($a->Name, $b->Name);
         // });
-
+        // dd(count($result));
         // $result=array();
-        // for($i=0; $i<6; $i++){
-        //     $result[$i] = $data[$i];
-        //     // $result[$i]->flag = Countries::select('filename')->where('code',$data[$i]->Code)->get();
-        // }
+        for($i=0; $i<count($result); $i++){
+            // $result[$i] = $data[$i];
+            // dd($result[3]->Country);
+            if($result[$i]->Country != "Unknown"){
+                // dd($result[$i]->Country);
+                $flag = Countries::select('filename')->where('name',$result[$i]->Country)->get();
+                dd($flag);
+                $result[$i]->flag = $flag;
+                
+            }else{
+                $result[$i]->flag = '';
+
+            }
+            // dd($flag);
+        }
         return response()->json([
             'result'=>$result
         ]);

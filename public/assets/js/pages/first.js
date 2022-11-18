@@ -20,7 +20,7 @@ $(document).ready(function(){
                         html += '<div class="w-125px w-md-100px px-2 lg:px-3 py-1 turncate text-left items-center"><span class="mt-1">'+data.result[i].Code+'</span></div>';
                         html += '<div class="flex-1  px-2 lg:px-3 py-1 text-left border-l-2 turncate items-center"><span class="mt-1">'+data.result[i].Name+'</span></div>';
                         html += '<div class="flex  px-2 lg:px-3 py-1 text-right items-center turncate self-center"><span class="mt-1">'+data.result[i].Exchange+'</span></div>';
-                        html += '<div class="flex px-3 lg:px-3 py-1 items-center self-center"><img class="w-4 h-4 my-auto inline ml-1" src="'+base_url+'/assets/media/flags/united-states.svg'+'"/></div>';
+                        html += '<div class="flex px-3 lg:px-3 py-1 items-center self-center"><img class="w-4 h-4 my-auto inline ml-1" src="'+base_url+'/'+data.result[i].flag+'"/></div>';
                         html += '</a></li>';
                     }
                     $('ul#search-result').append(html);
