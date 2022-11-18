@@ -43,9 +43,9 @@ $(document).ready(function(){
         //     return
         // }
         $('ul#search-result').hide();
-        $(".search-input").focus(function(){
-            if($(this).val().length > 0)
-            $('ul#search-result').show();
-        })
+    })
+    $(".search-input").focus(function(){
+        if($(this).val().length > 0)
+        $('ul#search-result').show();
     })
 });
