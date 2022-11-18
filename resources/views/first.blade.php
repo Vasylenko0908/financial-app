@@ -25,7 +25,7 @@
 								</span>
 								<input type="text" class="w-full search-input form-control ps-13 fs-7 h-40px" placeholder="Search a ticker or company name" value="" name="search">
 								<ul class="absolute w-full border border-gray-500 pb-2 menu-sub-dropdown " id="search-result">
-									<li class="w-full bg-hover-primary ">
+									<!-- <li class="w-full bg-hover-primary ">
 										<a href="{{url('company/AAPL')}}" class="flex fs-6 text-gray-700">
 											<div class="w-125px w-md-100px px-2 lg:px-3 py-1  text-left items-center"><span class="mt-1">A</span></div>
 											<div class="flex-1  px-2 lg:px-3 py-1 text-left border-l-2 turncate items-center"><span class="ml-2">Adfsfddswersdsdsdsdsdsdsdsddsssssssssssssssssssssssssssssssrwe11111111111111111111111</span></div>
@@ -36,7 +36,7 @@
 												<img src="{{asset('assets/media/flags/united-states.svg')}}" class="w-4 h-4 my-auto inline ml-1">
 											</div>
 										</a>		
-									</li>
+									</li> -->
 								</ul>
 							</div>
 							
