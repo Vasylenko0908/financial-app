@@ -72,7 +72,7 @@ class MainController extends Controller
             if($result[$i]->Country != "Unknown"){
                 // dd($result[$i]->Country);
                 $flag = Countries::select('filename')->where('name',$result[$i]->Country)->get();
-                var_dump($flag);
+                // var_dump($flag[0]);
                 $result[$i]->flag = $flag[0];
                 
             }else{
