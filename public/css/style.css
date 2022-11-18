@@ -189,14 +189,14 @@ table select option{
     background-position: center;
     background-repeat: no-repeat;
     border-radius: 10px;
-    width: 45px;
-    height: 45px;
+    width: 65px;
+    height: 65px;
     position: absolute;
     left: 0;
     top: 0;
 }
 .ticker_header{
-    padding-left:50px !important;
+    padding-left:69px !important;
 }
 .currency_detail {
     width: 100%;
