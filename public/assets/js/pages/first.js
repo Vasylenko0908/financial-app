@@ -32,6 +32,7 @@ $(document).ready(function(){
         $('ul#search-result').hide();
     })
     $(".search-input").focus(function(){
+        e.stopPropagation();
         if($(this).val().length > 0)
             $('ul#search-result').show();
     })
