@@ -22,10 +22,10 @@ class MainController extends Controller
     {
         $stock = Eod::stock();
         $result = json_decode($stock->search($name)->json());
-        
+        // dd($country);
         // JSON 
         for($i=0; $i<count($result); $i++){
-            if(strcmp($result[$i]->Country , $country)){
+            if(strcmp($result[$i]->Country , $country) == 0){
                 $data = $result[$i];
                 break;
             }
