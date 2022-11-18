@@ -18,9 +18,10 @@ class MainController extends Controller
         // $exchange = Eod::exchange();
         // $this->exchange_symbol = $exchange->exchange_symbol_list('US')->json();
     }
-    public function index()
+    public function index($name)
     {
         $stock = Eod::stock();
+        $result = json_decode($stock->search($name)->json());
         
         // JSON 
         
@@ -30,7 +31,7 @@ class MainController extends Controller
 
         // For other parameters, for ex. dividend api with other params
         // $stock->dividend('AAPL.US', ['from' => '2017-01-01'])->json();
-        return view('pages.home');
+        return view('pages.home', ['company' => $result]);
     }
     
     public function first(){
