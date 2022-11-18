@@ -28,12 +28,24 @@ $(document).ready(function(){
             });
         }
     });
-    $('.main-screen').click(function(){
-        $('ul#search-result').hide();
-    })
-    $(".search-input").focus(function(e){
+    // $('.main-screen').click(function(){
+    //     $('ul#search-result').hide();
+    // })
+    // $(".search-input").focus(function(e){
+    //     e.stopPropagation();
+    //     if($(this).val().length > 0)
+    //         $('ul#search-result').show();
+    // })
+    $('.main-screen').click(function(e){
+        e.preventDefault();
         e.stopPropagation();
-        if($(this).val().length > 0)
-            $('ul#search-result').show();
+        if(e.target !== this) {
+            return
+        }
+        $('ul#search-result').hide();
+        $(".search-input").focus(function(){
+            if($(this).val().length > 0)
+                $('ul#search-result').show();
+        })
     })
 });
