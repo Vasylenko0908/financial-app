@@ -27,6 +27,7 @@ class MainController extends Controller
         for($i=0; $i<count($result); $i++){
             if($result[$i]->Country == $country){
                 $data = $result[$i];
+                break;
             }
         }
 
