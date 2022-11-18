@@ -26,16 +26,10 @@ $(document).ready(function(){
                     $('ul#search-result').append(html);
                 }
             });
-        }
+        }else
+        $('ul#search-result').hide();
     });
-    // $('.main-screen').click(function(){
-    //     $('ul#search-result').hide();
-    // })
-    // $(".search-input").focus(function(e){
-    //     e.stopPropagation();
-    //     if($(this).val().length > 0)
-    //         $('ul#search-result').show();
-    // })
+    
     $('.main-screen').click(function(e){
         // if(e.target !== this) {
         //     return
