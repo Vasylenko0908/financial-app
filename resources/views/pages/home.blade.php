@@ -8,13 +8,14 @@
             <!-- Start Left sidebar -->
             <div class="col-md-3 col-sm-12">
                 <!-- Company Name & Currency -->
-                <div class="row p-2">
-                    <div class="col-md-6">
-                        <h3>{{ $company->Name}}.</h3>
+                <div class="row p-2 ticker_header relative mb-2">
+                    <h2>{{ $company->Name}} ({{$company->Code}})</h2>
+                    <div class="logo" style="background-image: url(https://eodhistoricaldata.com/img/tlogos/F/apc.png)"></div>
+                    <div>
+                        <div class="flex"><img class="w-5 h-5 my-auto inline ml-1 mr-5" src="http://localhost/assets/media/flags/united-states.svg">
+                        <span>CURRENCY:  <span class="fs-2x ">{{$company->previousClose}}  </span>{{$company->Currency}}</span></div>
                     </div>
-                    <div class="col-md-6 mt-2">
-                        <h5 class="absolute left-10 bottom-0">CURRENCY:{{$company->previousClose}}{{$company->Currency}}</h5>
-                    </div>
+                    
                 </div>
                 <!-- Overall -->
                 <div class="w-full border rounded-lg p-2 mt-xl-1">

@@ -184,7 +184,20 @@ table select option{
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-
+.ticker_header .logo {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.ticker_header{
+    padding-left:50px;
+}
 .currency_detail {
     width: 100%;
     overflow: auto;
