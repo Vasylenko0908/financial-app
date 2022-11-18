@@ -196,7 +196,7 @@ table select option{
     top: 0;
 }
 .ticker_header{
-    padding-left:50px;
+    padding-left:50px !important;
 }
 .currency_detail {
     width: 100%;

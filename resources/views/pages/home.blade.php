@@ -12,7 +12,7 @@
                     <h2>{{ $company->Name}} ({{$company->Code}})</h2>
                     <div class="logo" style="background-image: url(https://eodhistoricaldata.com/img/tlogos/F/apc.png)"></div>
                     <div>
-                        <div class="flex"><img class="w-5 h-5 my-auto inline ml-1 mr-5" src="http://localhost/assets/media/flags/united-states.svg">
+                        <div class="flex"><img class="w-5 h-5 my-auto inline ml-1 mr-3" src="http://localhost/assets/media/flags/united-states.svg">
                         <span>CURRENCY:  <span class="fs-2x ">{{$company->previousClose}}  </span>{{$company->Currency}}</span></div>
                     </div>
                     
