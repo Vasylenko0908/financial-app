@@ -39,9 +39,9 @@ $(document).ready(function(){
     $('.main-screen').click(function(e){
         e.preventDefault();
         e.stopPropagation();
-        // if(e.target !== this) {
-        //     return
-        // }
+        if(e.target !== this) {
+            return
+        }
         $('ul#search-result').hide();
     })
     $(".search-input").focus(function(){
