@@ -31,7 +31,7 @@ $(document).ready(function(){
     $('.main-screen').click(function(){
         $('ul#search-result').hide();
     })
-    $(".search-input").focus(function(){
+    $(".search-input").focus(function(e){
         e.stopPropagation();
         if($(this).val().length > 0)
             $('ul#search-result').show();
