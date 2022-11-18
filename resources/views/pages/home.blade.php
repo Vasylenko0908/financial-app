@@ -10,7 +10,7 @@
                 <!-- Company Name & Currency -->
                 <div class="row p-2">
                     <div class="col-md-6">
-                        <h3>{{ $company->Name}}</h3>
+                        <h3>{{ $company->Name}}.</h3>
                     </div>
                     <div class="col-md-6 mt-2">
                         <h5>CURRENCY:{{$company->previousClose}}{{$company->Currency}}</h5>
