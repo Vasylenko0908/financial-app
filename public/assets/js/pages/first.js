@@ -31,5 +31,8 @@ $(document).ready(function(){
     $('.main-screen').click(function(){
         $('ul#search-result').hide();
     })
-    
+    $(".search-input").click(function(){
+        if($(this).val().length > 0)
+            $('ul#search-result').show();
+    })
 });
