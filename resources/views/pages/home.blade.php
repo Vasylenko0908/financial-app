@@ -13,7 +13,7 @@
                         <h3>{{ $company->Name}}.</h3>
                     </div>
                     <div class="col-md-6 mt-2">
-                        <h5>CURRENCY:{{$company->previousClose}}{{$company->Currency}}</h5>
+                        <h5 class="absolute left-10 bottom-0">CURRENCY:{{$company->previousClose}}{{$company->Currency}}</h5>
                     </div>
                 </div>
                 <!-- Overall -->
