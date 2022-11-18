@@ -44,7 +44,7 @@ $(document).ready(function(){
         // // e.stopPropagation();
         $('ul#search-result').hide();
     })
-    $(".search-input").focus(function(e){
+    $(".search-input").click(function(e){
 
         if($(this).val().length > 0)
         $('ul#search-result').show();
