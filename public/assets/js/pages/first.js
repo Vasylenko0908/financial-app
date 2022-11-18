@@ -37,11 +37,11 @@ $(document).ready(function(){
     //         $('ul#search-result').show();
     // })
     $('.main-screen').click(function(e){
-        if(e.target !== this) {
-            return
-        }
-        // e.preventDefault();
-        // e.stopPropagation();
+        // if(e.target !== this) {
+        //     return
+        // }
+        // // e.preventDefault();
+        // // e.stopPropagation();
         $('ul#search-result').hide();
     })
     $(".search-input").focus(function(){
