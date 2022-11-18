@@ -37,8 +37,8 @@ $(document).ready(function(){
     //         $('ul#search-result').show();
     // })
     $('.main-screen').click(function(e){
-        e.preventDefault();
-        e.stopPropagation();
+        // e.preventDefault();
+        // e.stopPropagation();
         if(e.target !== this) {
             return
         }
