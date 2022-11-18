@@ -18,20 +18,24 @@ class MainController extends Controller
         // $exchange = Eod::exchange();
         // $this->exchange_symbol = $exchange->exchange_symbol_list('US')->json();
     }
-    public function index($name)
+    public function index($name,$country)
     {
         $stock = Eod::stock();
         $result = json_decode($stock->search($name)->json());
         
         // JSON 
-        
+        for($i=0; $i<count($result); $i++){
+            if($result[$i]->Country == $country){
+                $data = $result[$i];
+            }
+        }
 
         // // Save CSV to specific path
         // $stock->realTime('AAPL.US')->save('path/to/save/csv/stock.csv');
 
         // For other parameters, for ex. dividend api with other params
         // $stock->dividend('AAPL.US', ['from' => '2017-01-01'])->json();
-        return view('pages.home', ['company' => $result]);
+        return view('pages.home', ['company' => $data]);
     }
     
     public function first(){

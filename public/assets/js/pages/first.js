@@ -16,7 +16,7 @@ $(document).ready(function(){
                     var html='';
                     for(i=0 ; i < data.result.length ; i++){
                         html += '<li class="w-full bg-hover-primary ">';
-                        html += '<a href="'+base_url+'/company/'+data.result[i].Code+'" class="flex fs-6 text-gray-700">';
+                        html += '<a href="'+base_url+'/company/'+data.result[i].Code+'/'+data.result[i].Country+'" class="flex fs-6 text-gray-700">';
                         html += '<div class="w-125px w-md-100px px-2 lg:px-3 py-1 turncate text-left items-center"><span class="mt-1">'+data.result[i].Code+'</span></div>';
                         html += '<div class="flex-1  px-2 lg:px-3 py-1 text-left border-l-2 turncate items-center"><span class="mt-1">'+data.result[i].Name+'</span></div>';
                         html += '<div class="flex  px-2 lg:px-3 py-1 text-right items-center turncate self-center"><span class="mt-1">'+data.result[i].Exchange+'</span></div>';
