@@ -29,7 +29,7 @@
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Market Capitalization</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{Coduo\PHPHumanizer\NumberHumanizer::metricSuffix(1200)}}</div>
+                                    <div class="flex truncate font-medium">{{Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Highlights->MarketCapitalization)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Enterprise Value (MRO)
