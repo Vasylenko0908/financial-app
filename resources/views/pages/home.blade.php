@@ -45,22 +45,22 @@
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Gross Profit(FY)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">91.158M</div>
+                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Financials->Income_Statement->quarterly->$pastquarter->grossProfit) }}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">EBITDA (TTM)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">165.992M </div>
+                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Financials->Income_Statement->quarterly->$pastquarter->ebitda) }} </div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Net Income (FY)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">59.58M</div>
+                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Financials->Income_Statement->quarterly->$pastquarter->netIncome) }}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1  text-sm font-light ">
                                     <div class="flex truncate">Free Cash Flow (TTM) </div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">97.859M</div>
+                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Financials->Income_Statement->quarterly->$pastquarter->freeCashFlow) }}</div>
                                 </div>
                             </div>
                         </div>
