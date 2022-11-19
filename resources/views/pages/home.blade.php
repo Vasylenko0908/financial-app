@@ -197,27 +197,27 @@
                                 <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">P/E</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">24.8</div>
+                                    <div class="flex truncate font-medium">{{number_format($fundamental->Valuation->TrailingPE,4)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light ">
                                     <div class="flex truncate" >P/B</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">42.5</div>
+                                    <div class="flex truncate font-medium">{{number_format($fundamental->Valuation->PriceBookMRQ,4)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">P/S</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">6.4</div>
+                                    <div class="flex truncate font-medium">{{number_format($fundamental->Valuation->PriceSalesTTM,4)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">EV/S</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">6.5</div>
+                                    <div class="flex truncate font-medium">{{number_format($fundamental->Valuation->PriceSalesTTM,4)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">EV/EBITDA</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">19.4 </div>
+                                    <div class="flex truncate font-medium">{{number_format($fundamental->Valuation->EnterpriseValueEbitda,4)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">EV/EBIT</div>
