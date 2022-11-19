@@ -69,28 +69,28 @@
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Total Shares Outstanding...</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">16.13M</div>
+                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->SharesStats->SharesOutstanding) }}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">total free float
                                     </div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">123</div>
+                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->SharesStats->SharesFloat) }}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">insider ownership %</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">15</div>
+                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->SharesStats->PercentInsiders) }}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Shared held by institutions</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">45</div>
+                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->SharesStats->PercentInstitutions) }}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">% shares short</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">123 </div>
+                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->SharesStats->PercentInstitutions) }} </div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">industry</div>
