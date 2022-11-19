@@ -35,12 +35,12 @@
                                     <div class="flex truncate">Enterprise Value (MRO)
                                     </div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">1.988B</div>
+                                    <div class="flex truncate font-medium">{{Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Valuation->EnterpriseValue)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Total Revenue(FY)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">920.22M</div>
+                                    <div class="flex truncate font-medium">{{ Carbon\Carbon::now()->modify('-3 Months')->lastOfQuarter()->format('Y-m-d') }}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Gross Profit(FY)</div>
