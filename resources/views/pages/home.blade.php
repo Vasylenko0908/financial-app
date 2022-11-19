@@ -118,7 +118,7 @@
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">
                                     @if(isset($fundamental->SharesStats->PercentInsiders))
-                                        {{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->SharesStats->PercentInsiders) }}
+                                        {{ number_format($fundamental->SharesStats->PercentInsiders,2) }}
                                     @endif
                                     </div>
                                 </div>
