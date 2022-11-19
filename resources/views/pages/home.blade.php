@@ -1,3 +1,4 @@
+
 @section('script')
     <script src="{{ asset('assets/js/widgets.bundle.js') }}"></script>
 	<script src="{{ asset('assets/js/custom/widgets.js') }}"></script>
@@ -10,7 +11,7 @@
                 <!-- Company Name & Currency -->
                 <div class="row p-2 ticker_header relative mb-2">
                     <h2>{{ $company->Name}} ({{$company->Code}})</h2>
-                    <div class="logo" style="background-image: url(https://eodhistoricaldata.com/img/logos/{{$company->Exchange}}/{{$company->Code}}.png)"></div>
+                    <div class="logo" style="background-image: url(https://eodhistoricaldata.com/{{$fundamental->General->LogoURL}}"></div>
                     <div>
                         <div class="flex"><img class="w-5 h-5 my-auto inline ml-1 mr-3" src="http://localhost/assets/media/flags/united-states.svg">
                         <span>CURRENCY:  <span class="fs-2x ">{{$company->previousClose}}  </span>{{$company->Currency}}</span></div>
@@ -28,7 +29,7 @@
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Market Capitalization</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">2.731B</div>
+                                    <div class="flex truncate font-medium">{{Coduo\PHPHumanizer\NumberHumanizer::metricSuffix(1200)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Enterprise Value (MRO)
@@ -333,11 +334,11 @@
                             <div class=" flex-col space-y-1 py-2 pr-4">
                                 <div class="w-full flex font-light text-sm text-left">
                                     <div class=" text-neutral-400">Sector: </div>
-                                    <div class="pl-1">Technology</div>
+                                    <div class="pl-1">{{$fundamental->General->Sector}}</div>
                                 </div>
                                 <div class="w-full flex font-light text-sm text-left">
                                     <div class="text-neutral-400">Industry: </div>
-                                    <div class="pl-1">Consumer Electronics</div>
+                                    <div class="pl-1">{{$fundamental->General->Industry}}</div>
                                 </div>
                                 <div class="w-full flex font-light text-sm text-left">
                                     <div class="text-neutral-400">CEO: </div>
@@ -347,36 +348,36 @@
                             <div class=" flex-col space-y-1 py-2 pr-4">
                                 <div class="w-full flex font-light text-sm text-left">
                                     <div class=" text-neutral-400">Full-time employees: </div>
-                                    <div class="pl-1">154,000</div>
+                                    <div class="pl-1">{{$fundamental->General->FullTimeEmployees}}</div>
                                 </div>
                                 <div class="w-full flex font-light text-sm text-left">
                                     <div class="text-neutral-400">City: </div>
-                                    <div class="pl-1">Cupertino</div>
+                                    <div class="pl-1">{{$fundamental->General->AddressData->City}}</div>
                                 </div>
                                 <div class="w-full flex font-light text-sm text-left">
                                     <div class="text-neutral-400">Address: </div>
-                                    <div class="pl-1">1 Apple Park Way</div>
+                                    <div class="pl-1">{{$fundamental->General->Address}}</div>
                                 </div>
                             </div>
                             <div class=" flex-col space-y-1 py-2 pr-4">
                                 <div class="w-full flex font-light text-sm text-left">
                                     <div class="text-neutral-400">IPO: </div>
-                                    <div class="pl-1">Dec 12, 1980</div>
+                                    <div class="pl-1">{{$fundamental->General->IPODate}}</div>
                                 </div>
                                 <div class="w-full flex font-light text-sm text-left">
                                     <div class=" text-neutral-400">CIK: </div>
                                     <div class="pl-1">
-                                        <a href="https://www.sec.gov/edgar/browse/?CIK=0000320193" target="_blank">0000320193</a>
+                                        <a href="https://www.sec.gov/edgar/browse/?CIK={{$fundamental->General->CIK}}" target="_blank">{{$fundamental->General->CIK}}</a>
                                     </div>
                                 </div>
                                 <div class="w-full flex font-light text-sm text-left">
                                     <div class="text-neutral-400">Website: </div>
-                                    <div class="pl-1"><a href="https://www.apple.com" target="_blank">apple.com</a>
+                                    <div class="pl-1"><a href="{{$fundamental->General->WebURL}}" target="_blank">{{$fundamental->General->WebURL}}</a>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="w-full flex font-light text-base antialiased leading-normal text-justify pt-2 ">Apple Inc. designs, manufactures, and markets smartphones, personal computers, tablets, wearables, and accessories worldwide. It also sells various related services. In addition, the company offers iPhone, a line of smartphones; Mac, a line of personal computers; iPad, a line of multi-purpose tablets; AirPods Max, an over-ear wireless headphone; and wearables, home, and accessories comprising AirPods, Apple TV, Apple Watch, Beats products, HomePod, and iPod touch. Further, it provides AppleCare support services; cloud services store services; and operates various platforms, including the App Store that allow customers to discover and download applications and digital content, such as books, music, video, games, and podcasts. Additionally, the company offers various services, such as Apple Arcade, a game subscription service; Apple Music, which offers users a curated listening experience with on-demand radio stations; Apple News+, a subscription news and magazine service; Apple TV+, which offers exclusive original content; Apple Card, a co-branded credit card; and Apple Pay, a cashless payment service, as well as licenses its intellectual property. The company serves consumers, and small and mid-sized businesses; and the education, enterprise, and government markets. It distributes third-party applications for its products through the App Store. The company also sells its products through its retail and online stores, and direct sales force; and third-party cellular network carriers, wholesalers, retailers, and resellers. Apple Inc. was incorporated in 1977 and is headquartered in Cupertino, California.</div>
+                    <div class="w-full flex font-light text-base antialiased leading-normal text-justify pt-2 ">{{$fundamental->General->Description}}</div>
                 </div>
             </div>
             </div>

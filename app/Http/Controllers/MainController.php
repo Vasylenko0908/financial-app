@@ -22,6 +22,7 @@ class MainController extends Controller
     {
         $stock = Eod::stock();
         $result = json_decode($stock->search($name)->json());
+        
         // dd($country);
         // JSON 
         for($i=0; $i<count($result); $i++){
@@ -30,13 +31,14 @@ class MainController extends Controller
                 break;
             }
         }
-
+        $fund_sym = $data->Code.'.'.$data->Exchange;
+        $fundamental = json_decode($stock->fundamental($fund_sym)->json());
         // // Save CSV to specific path
         // $stock->realTime('AAPL.US')->save('path/to/save/csv/stock.csv');
 
         // For other parameters, for ex. dividend api with other params
         // $stock->dividend('AAPL.US', ['from' => '2017-01-01'])->json();
-        return view('pages.home', ['company' => $data]);
+        return view('pages.home', ['company' => $data,'fundamental'=>$fundamental]);
     }
     
     public function first(){
