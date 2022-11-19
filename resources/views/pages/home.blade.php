@@ -90,7 +90,7 @@
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">% shares short</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->SharesStats->PercentInstitutions) }} </div>
+                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->SharesStats->SharesShort) }} </div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">industry</div>
