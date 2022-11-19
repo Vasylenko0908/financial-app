@@ -180,14 +180,14 @@
                                     <div class="flex truncate font-medium">{{number_format($fundamental->Highlights->OperatingMarginTTM,4)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
-                                    <div class="flex truncate">Pretex Margin (TTM)</div>
+                                    <div class="flex truncate">Pretax Margin (TTM)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{number_format($fundamental->Highlights->OperatingMarginTTM,4)}}</div>
+                                    <div class="flex truncate font-medium">{{number_format($fundamental->Financials->Income_Statement->quarterly->$pastquarter->incomeBeforeTax/$fundamental->Financials->Income_Statement->quarterly->$pastquarter->totalRevenue,4)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">ebitda Margin</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">345</div>
+                                    <div class="flex truncate font-medium">{{number_format($fundamental->Financials->Income_Statement->quarterly->$pastquarter->ebitda/$fundamental->Financials->Income_Statement->quarterly->$pastquarter->totalRevenue,4)}}</div>
                                 </div>
                             </div>
                             <div class="w-full flex items-end pb-2 justify-content-center border-b">
@@ -212,7 +212,7 @@
                                 <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">EV/S</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{number_format($fundamental->Valuation->PriceSalesTTM,1)}}</div>
+                                    <div class="flex truncate font-medium">{{number_format($fundamental->Valuation->EnterpriseValueRevenue,1)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">EV/EBITDA</div>
@@ -222,17 +222,17 @@
                                 <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">EV/EBIT</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">21.3</div>
+                                    <div class="flex truncate font-medium">{{number_format($fundamental->Valuation->EnterpriseValue/$fundamental->Financials->Income_Statement->quarterly->$pastquarter->ebit,1)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">EV/Pretax</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">21.4</div>
+                                    <div class="flex truncate font-medium">{{number_format($fundamental->Valuation->EnterpriseValue/$fundamental->Financials->Income_Statement->quarterly->$pastquarter->taxProvision,1)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
                                     <div class="flex truncate">EV/FCF</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">23.4 </div>
+                                    <div class="flex truncate font-medium">{{number_format($fundamental->Valuation->EnterpriseValue/$fundamental->Financials->Cash_Flow->quarterly->$pastquarter->freeCashFlow,1)}} </div>
                                 </div>
                             </div>
                             <div class="w-full flex items-end pb-2 justify-content-center border-b">
@@ -312,7 +312,7 @@
                             </div>
                             <div class="space-y-1 flex flex-col items-start sticky left-0 z-10">
                                 <div class="flex flex-row shrink-0 w-full px-1 text-xl font-light">
-                                    <div class="flex truncate">Revennu</div>
+                                    <div class="flex truncate">Revenue</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">12.9%</div>
                                 </div>
