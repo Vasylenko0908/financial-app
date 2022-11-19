@@ -272,7 +272,7 @@
                                     <div class="flex truncate">Current Ratio(MRQ)
                                     </div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{number_format(($fundamental->Financials->Balance_Sheet->quarterly->$pastquarter->totalAssets/$fundamental->Financials->Balance_Sheet->quarterly->$pastquarter->totalLiab),4)}}</div>
+                                    <div class="flex truncate font-medium">{{number_format(($fundamental->Financials->Balance_Sheet->quarterly->$pastquarter->totalCurrentAssets/$fundamental->Financials->Balance_Sheet->quarterly->$pastquarter->totalCurrentLiabilities),4)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Debt to Equality Ratio(MRQ)</div>
