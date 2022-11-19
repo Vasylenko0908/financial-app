@@ -40,7 +40,7 @@
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Total Revenue(FY)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{ Carbon\Carbon::now()->modify('-3 Months')->lastOfQuarter()->format('Y-m-d') }}</div>
+                                    <div class="flex truncate font-medium">{{ $pastquarter }}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Gross Profit(FY)</div>

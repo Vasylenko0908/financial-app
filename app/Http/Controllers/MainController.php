@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Eod;
 use App\Models\Countries;
+use Carbon\Carbon;
 
 class MainController extends Controller
 {
@@ -33,12 +34,13 @@ class MainController extends Controller
         }
         $fund_sym = $data->Code.'.'.$data->Exchange;
         $fundamental = json_decode($stock->fundamental($fund_sym)->json());
+        $pastquarter = Carbon::now()->modify('-3 Months')->lastOfQuarter()->format('Y-m-d');
         // // Save CSV to specific path
         // $stock->realTime('AAPL.US')->save('path/to/save/csv/stock.csv');
 
         // For other parameters, for ex. dividend api with other params
         // $stock->dividend('AAPL.US', ['from' => '2017-01-01'])->json();
-        return view('pages.home', ['company' => $data,'fundamental'=>$fundamental]);
+        return view('pages.home', ['company' => $data,'fundamental'=>$fundamental, 'pastquarter' => $pastquarter ]);
     }
     
     public function first(){
