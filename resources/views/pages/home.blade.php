@@ -50,7 +50,7 @@
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">EBITDA (TTM)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Financials->Income_Statement->quarterly->$pastquarter->ebitda) }} </div>
+                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Highlights->EBITDA) }} </div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Net Income (FY)</div>
@@ -95,12 +95,12 @@
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">industry</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">industrial</div>
+                                    <div class="flex truncate font-medium">{{$fundamental->General->Industry)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1  text-sm font-light ">
                                     <div class="flex truncate">dividend yield </div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">234</div>
+                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Highlights->DividendYield)}}</div>
                                 </div>
                             </div>
                         </div>
