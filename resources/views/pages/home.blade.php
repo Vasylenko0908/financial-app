@@ -95,7 +95,7 @@
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">industry</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{$fundamental->General->Industry)}}</div>
+                                    <div class="flex truncate font-medium">{{$fundamental->General->Industry}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1  text-sm font-light ">
                                     <div class="flex truncate">dividend yield </div>
