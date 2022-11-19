@@ -162,7 +162,7 @@
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Gross Margin(TTM)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">0.1113</div>
+                                    <div class="flex truncate font-medium">{{number_format($fundamental->Highlights->ProfitMargin,4)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Net Margin (TTM)</div>
@@ -172,17 +172,17 @@
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">fcf margin</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">394</div>
+                                    <div class="flex truncate font-medium">{{number_format($fundamental->Financials->Cash_Flow->quarterly->$pastquarter->freeCashFlow/$fundamental->Highlights->RevenueTTM,4)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Operating Margin (TTM)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">0.1112</div>
+                                    <div class="flex truncate font-medium">{{number_format($fundamental->Highlights->OperatingMarginTTM,4)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Pretex Margin (TTM)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">0.1180</div>
+                                    <div class="flex truncate font-medium">{{number_format($fundamental->Highlights->OperatingMarginTTM,4)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">ebitda Margin</div>
