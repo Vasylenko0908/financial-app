@@ -100,7 +100,7 @@
                                 <div class="flex flex-row shrink-0 w-full px-1  text-sm font-light ">
                                     <div class="flex truncate">dividend yield </div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Highlights->DividendYield)}}</div>
+                                    <div class="flex truncate font-medium">{{ $fundamental->Highlights->DividendYield}}</div>
                                 </div>
                             </div>
                         </div>
