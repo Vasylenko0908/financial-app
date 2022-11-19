@@ -60,7 +60,7 @@
                                 <div class="flex flex-row shrink-0 w-full px-1  text-sm font-light ">
                                     <div class="flex truncate">Free Cash Flow (TTM) </div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Financials->Income_Statement->quarterly->$pastquarter->freeCashFlow) }}</div>
+                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Financials->Cash_Flow->quarterly->$pastquarter->freeCashFlow) }}</div>
                                 </div>
                             </div>
                         </div>
