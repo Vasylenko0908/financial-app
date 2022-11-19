@@ -29,38 +29,66 @@
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Market Capitalization</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Highlights->MarketCapitalization)}}</div>
+                                    <div class="flex truncate font-medium">
+                                    @if(isset($fundamental->Highlights->MarketCapitalization))
+                                        {{Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Highlights->MarketCapitalization)}}
+                                    @endif
+                                    </div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Enterprise Value (MRO)
                                     </div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Valuation->EnterpriseValue)}}</div>
+                                    <div class="flex truncate font-medium">
+                                    @if(isset($fundamental->Valuation->EnterpriseValue))
+                                        {{Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Valuation->EnterpriseValue)}}
+                                    @endif
+                                    </div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Total Revenue(FY)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Financials->Income_Statement->quarterly->$pastquarter->totalRevenue) }}</div>
+                                    <div class="flex truncate font-medium">
+                                    @if(isset($fundamental->Financials->Income_Statement->quarterly->$pastquarter->totalRevenue))
+                                        {{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Financials->Income_Statement->quarterly->$pastquarter->totalRevenue) }}
+                                    @endif
+                                    </div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Gross Profit(FY)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Financials->Income_Statement->quarterly->$pastquarter->grossProfit) }}</div>
+                                    <div class="flex truncate font-medium">
+                                    @if(isset($fundamental->Financials->Income_Statement->quarterly->$pastquarter->grossProfit))
+                                        {{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Financials->Income_Statement->quarterly->$pastquarter->grossProfit) }}
+                                    @endif
+                                    </div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">EBITDA (TTM)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Highlights->EBITDA) }} </div>
+                                    <div class="flex truncate font-medium">
+                                    @if(isset($fundamental->Highlights->EBITDA))
+                                        {{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Highlights->EBITDA) }}
+                                    @endif
+                                    </div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Net Income (FY)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Financials->Income_Statement->quarterly->$pastquarter->netIncome) }}</div>
+                                    <div class="flex truncate font-medium">
+                                    @if(isset($fundamental->Highlights->EBITDA))
+                                        {{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Financials->Income_Statement->quarterly->$pastquarter->netIncome) }}
+                                    @endif
+                                    </div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1  text-sm font-light ">
                                     <div class="flex truncate">Free Cash Flow (TTM) </div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Financials->Cash_Flow->quarterly->$pastquarter->freeCashFlow) }}</div>
+                                    <div class="flex truncate font-medium">
+                                    @if(isset($fundamental->Highlights->EBITDA))
+                                        {{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Financials->Cash_Flow->quarterly->$pastquarter->freeCashFlow) }}
+                                    @endif
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -69,18 +97,30 @@
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Total Shares Outstanding...</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->SharesStats->SharesOutstanding) }}</div>
+                                    <div class="flex truncate font-medium">
+                                    @if(isset($fundamental->SharesStats->SharesOutstanding))
+                                        {{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->SharesStats->SharesOutstanding) }}
+                                    @endif
+                                    </div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">total free float
                                     </div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->SharesStats->SharesFloat) }}</div>
+                                    <div class="flex truncate font-medium">
+                                    @if(isset($fundamental->SharesStats->SharesFloat))
+                                        {{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->SharesStats->SharesFloat) }}
+                                    @endif
+                                    </div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">insider ownership %</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">{{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->SharesStats->PercentInsiders) }}</div>
+                                    <div class="flex truncate font-medium">
+                                    @if(isset($fundamental->SharesStats->PercentInsiders))
+                                        {{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->SharesStats->PercentInsiders) }}
+                                    @endif
+                                    </div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Shared held by institutions</div>
