@@ -282,17 +282,29 @@
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Net Debt(MRQ)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">91.158M</div>
+                                    <div class="flex truncate font-medium">
+                                    @if(isset($fundamental->Financials->Balance_Sheet->quarterly->$pastquarter->netDebt))
+                                        {{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Financials->Balance_Sheet->quarterly->$pastquarter->netDebt) }}
+                                    @endif
+                                    </div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Total Debt(MRQ)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">165.992M </div>
+                                    <div class="flex truncate font-medium">
+                                    @if(isset($fundamental->Financials->Balance_Sheet->quarterly->$pastquarter->totalLiab))
+                                        {{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Financials->Balance_Sheet->quarterly->$pastquarter->totalLiab) }}
+                                    @endif
+                                    </div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
                                     <div class="flex truncate">Total Aseets(MRQ)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">59.58M</div>
+                                    <div class="flex truncate font-medium">
+                                    @if(isset($fundamental->Financials->Balance_Sheet->quarterly->$pastquarter->totalAssets))
+                                        {{ Coduo\PHPHumanizer\NumberHumanizer::metricSuffix($fundamental->Financials->Balance_Sheet->quarterly->$pastquarter->totalAssets) }}
+                                    @endif
+                                    </div>
                                 </div>
                             </div>
                             <div class="w-full flex items-end pb-2 justify-content-center border-b">
