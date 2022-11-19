@@ -262,33 +262,35 @@
                             </div>
                             <div class="space-y-1 flex flex-col items-start sticky left-0 z-10">
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
-                                    <div class="flex truncate">Market Capitalization</div>
+                                    <div class="flex truncate">Quick Ratio(MRQ)</div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">2.731B</div>
+                                    <div class="flex truncate font-medium">
+                                        {{}}
+                                    </div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
-                                    <div class="flex truncate">Enterprise Value (MRO)
+                                    <div class="flex truncate">Current Ratio(MRQ)
                                     </div>
                                     <div class="flex flex-1 "></div>
-                                    <div class="flex truncate font-medium">1.988B</div>
+                                    <div class="flex truncate font-medium">{{number_format(($fundamental->Financials->Balance_Sheet->quarterly->$pastquarter->totalAssets/$fundamental->Financials->Balance_Sheet->quarterly->$pastquarter->totalLiab),4)}}</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
-                                    <div class="flex truncate">Total Revenue(FY)</div>
+                                    <div class="flex truncate">Debt to Equality Ratio(MRQ)</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">920.22M</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
-                                    <div class="flex truncate">Gross Profit(FY)</div>
+                                    <div class="flex truncate">Net Debt(MRQ)</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">91.158M</div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
-                                    <div class="flex truncate">EBITDA (TTM)</div>
+                                    <div class="flex truncate">Total Debt(MRQ)</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">165.992M </div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
-                                    <div class="flex truncate">Net Income (FY)</div>
+                                    <div class="flex truncate">Total Aseets(MRQ)</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">59.58M</div>
                                 </div>
