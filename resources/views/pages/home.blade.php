@@ -265,7 +265,7 @@
                                     <div class="flex truncate">Quick Ratio(MRQ)</div>
                                     <div class="flex flex-1 "></div>
                                     <div class="flex truncate font-medium">
-                                        
+                                    {{number_format((($fundamental->Financials->Balance_Sheet->quarterly->$pastquarter->cash+$fundamental->Financials->Balance_Sheet->quarterly->$pastquarter->cashAndEquivalents+$fundamental->Financials->Balance_Sheet->quarterly->$pastquarter->accountsPayable)/$fundamental->Financials->Balance_Sheet->quarterly->$pastquarter->totalCurrentLiabilities),4)}}
                                     </div>
                                 </div>
                                 <div class="flex flex-row shrink-0 w-full px-1 text-sm font-light">
